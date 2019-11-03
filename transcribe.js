@@ -71,17 +71,23 @@ function transkribavimoTaisyklesDE() {
 //addEntryDE( "","",'E',"","","",3,"E",1,1 );//paprastas keitimas (14 taisykle)
 
 //F raide
-//addEntryDE( "","",'F',"F","","",3,"F",2,1 );//paprastas keitimas (14 taisykle)
-//addEntryDE( "","",'F',"","","",3,"F",1,1 );//paprastas keitimas (14 taisykle)
+//addEntryDE( "","",'F',"F","","",3,"F",2,1 );//paprastas keitimas (17 taisykle)
+//addEntryDE( "","",'F',"","","",3,"F",1,1 );//paprastas keitimas (17 taisykle)
 
 
 //G raide
-//addEntryDE( "","",'G',"G","","",3,"G",2,1 );//paprastas keitimas (14 taisykle)
-//addEntryDE( "","",'G',"H","","",3,"G",2,1 );//paprastas keitimas (14 taisykle)
-//addEntryDE( "","",'G',"K","","",3,"K",2,1 );//paprastas keitimas (14 taisykle)
-//addEntryDE( "","",'G',"","","",3,"G",1,1 );//paprastas keitimas (14 taisykle)
+//addEntryDE( "","",'G',"G","","",3,"G",2,1 );//paprastas keitimas (18 taisykle)
+//addEntryDE( "","",'G',"H","","",3,"G",2,1 );//paprastas keitimas (18 taisykle)
+//addEntryDE( "","",'G',"K","","",3,"K",2,1 );//paprastas keitimas (19 taisykle)
+//addEntryDE( "","",'G',"","","",3,"G",1,1 );//paprastas keitimas (18 taisykle)
 
-//
+//H raide
+//addEntryDE( "","BCDFHKLMNPVZ",'H',"","","",3,"H",1,1 );//paprastas keitimas (20 taisykle)
+//addEntryDE( "","G",'H',"","","",3,"G",1,1 );//paprastas keitimas (20 taisykle)
+//addEntryDE( "","J",'H',"","","",3,"J",1,1 );//paprastas keitimas (20 taisykle)
+//addEntryDE( "","R",'H',"","","",3,"R",1,1 );//paprastas keitimas (20 taisykle)
+//addEntryDE( "","T",'H',"","","",3,"T",1,1 );//paprastas keitimas (20 taisykle)
+//addEntryDE( "","",'H',"","","",3,"H",1,1 );//paprastas keitimas (20 taisykle)
 
 }
 
