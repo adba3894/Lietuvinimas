@@ -16,133 +16,104 @@ function addEntryPL(KKont2, KKont1, ES, DKont1, DKont2, DKont3, Gim, FonV, PoslR
 //Kkont2 - kairysis kontekstas, dvi raides i kaire.
 //Kkont1 - viena raide i kaire.
 //Es - einamoji raide
-//Dkont - 1 2 3 raides i dešine
-//Gim - gimine vyriška, moteriška ar betkuri
+//Dkont - 1 2 3 raides i deÂšine
+//Gim - gimine vyriÂška, moteriÂška ar betkuri
 //Fonv - raide, i kuria keisti
-//Poslr - per kiek raidžiu pasislinkti
+//Poslr - per kiek raidÂžiu pasislinkti
 //Poslt - per kiek taisykliu pasislinkti
 
 
 function transkribavimoTaisyklesDE() {
+//A raide (2  taisykle ziuret)
+//addEntryDE( "","",'A',"Y","BCDFGHJKLMNPRTVZ","",3,"AI",3,1 );// samplaika lieka viename skiemenyje (4 taisykle)
+//addEntryDE( "","",'A',"I","BCDFGHJKLMNPRTVZ","",3,"AI",3,1 );// samplaika lieka viename skiemenyje (4 taisykle)
+//addEntryDE( "","",'Ã„',"U","BCDFGHJKLMNPRTVZ","",3,"OI",3,1 );//samplaika lieka viename skiemenyje (5 taisykle)
+//addEntryDE( "","",'A',"E","H","",3,"Ä–",3,1 );//paprastas keitimas (3 taisykle)
+//addEntryDE( "","",'A',"Y","","",3,"AJ",2,1 );// samplaika skyla i skirtingus skiemenis (4 taisykle)
+//addEntryDE( "","",'A',"I","","",3,"AJ",2,1 );// samplaika skyla i skirtingus skiemenis (4 taisykle)
+//addEntryDE( "","",'A',"H","","",3,"A",2,1 );//paprastas keitimas (1 taisykle)
+//addEntryDE( "","",'A',"E","","",3,"E",2,1 );//paprastas keitimas (2 taisykle)
+//addEntryDE( "","",'Ã„',"H","","",3,"Ä–",2,1 );//paprastas keitimas (3 taisykle)
+//addEntryDE( "","",'Ã„',"U","","",3,"OJ",2,1 );//samplaika skyla i skirtingus skiemenis (5 taisykle)
+//addEntryDE( "","",'A',"A","","",3,"A",2,1 );//paprastas keitimas (1 taisykle)
+//addEntryDE( "","",'Ã„',"","","",3,"E",1,1 );//paprastas keitimas (2 taisykle)
+//addEntryDE( "","",'A',"","","",3,"A",1,1 );////paprastas keitimas (1 taisykle)
 
-//A raide
-//addEntryDE( "","",'A',"A","","",3,"A",2,1 );
-//addEntryDE( "","",'A',"H","","",3,"A",2,1 );
-//addEntryDE( "","",'Ä',"","","",3,"E",1,1 );
-//addEntryDE( "","",'A',"E","","",3,"E",1,1 );
-//addEntryDE( "","",'Ä',"H","","",3,"E",2,1 );
-//addEntryDE( "","",'A',"E","H","",3,"E",3,1 );
-//addEntryDE( "","",'A',"Y","","",3,"AI",1,1 );
-//addEntryDE( "","",'A',"I","","",3,"AI",1,1 );
-////addEntryDE( "","",'A',"Y","E","",3,"AI",1,1 ); //samplaika nelieka viename sakiny
-////addEntryDE( "","",'A',"I","E","",3,"AI",1,1 ); //samplaika nelieka viename sakiny
-//addEntryDE( "","",'Ä',"U","","",3,"OI",2,1 );// saplaika lieka 1 skiemeny
-////addEntryDE( "","",'Ä',"U","","",3,"OI",2,1 );// saplaika nelieka 1 skiemeny
-//addEntryDE( "","",'A',"","","",3,"A",1,1 );
-
-// B raide
-//addEntryDE( "","",'B',"B","","",3,"B",1,1 );
-//addEntryDE( "","",'B',"","","",3,"B",1,1 );
+//B raide
+//addEntryDE( "","",'B',"B","","",3,"B",2,1 );//paprastas keitimas (6 taisykle)
+//addEntryDE( "","",'B',"","","",3,"B",1,1 );//paprastas keitimas (6 taisykle)
 
 //C raide
-//addEntryDE( "","",'C',"E","","",3,"C",1,1 );
-//addEntryDE( "","",'C',"I","","",3,"C",1,1 );
-//addEntryDE( "","",'C',"Y","","",3,"C",1,1 );
-//addEntryDE( "","",'C',"A","","",3,"K",1,1 );
-//addEntryDE( "","",'C',"O","","",3,"K",1,1 );
-//addEntryDE( "","",'C',"U","","",3,"K",1,1 );
-//addEntryDE( "","",'C',"P","","",3,"K",1,1 );
-//addEntryDE( "","",'C',"B","","",3,"K",1,1 );
-//addEntryDE( "","",'C',"T","","",3,"K",1,1 );
-//addEntryDE( "","",'C',"D","","",3,"K",1,1 );
-//addEntryDE( "","",'C',"K","","",3,"K",1,1 );
-//addEntryDE( "","",'C',"G","","",3,"K",1,1 );
-//addEntryDE( "","",'C',"F","","",3,"K",1,1 );
-//addEntryDE( "","",'C',"V","","",3,"K",1,1 );
-//addEntryDE( "","",'C',"S","","",3,"K",1,1 );
-//addEntryDE( "","",'C',"Z","","",3,"K",1,1 );
-//addEntryDE( "","",'C',"J","","",3,"K",1,1 );
-//addEntryDE( "","",'C',"X","","",3,"K",1,1 );
-//addEntryDE( "","",'C',"H","","",3,"K",1,1 );
-//addEntryDE( "","",'C',"L","","",3,"K",1,1 );
-//addEntryDE( "","",'C',"M","","",3,"K",1,1 );
-//addEntryDE( "","",'C',"N","","",3,"K",1,1 );
-//addEntryDE( "","",'C',"R","","",3,"K",1,1 );
-//addEntryDE( "","E",'C',"","","",3,"C",1,1 );
-//addEntryDE( "","I",'C',"","","",3,"C",1,1 );
-//addEntryDE( "","Y",'C',"","","",3,"C",1,1 );
-//addEntryDE( "","A",'C',"","","",3,"K",1,1 );
-//addEntryDE( "","O",'C',"","","",3,"K",1,1 );
-//addEntryDE( "","U",'C',"","","",3,"K",1,1 );
-//addEntryDE( "","P",'C',"","","",3,"K",1,1 );
-//addEntryDE( "","B",'C',","","",3,"K",1,1 );
-//addEntryDE( "","T",'C',"","","",3,"K",1,1 );
-//addEntryDE( "","D",'C',"","","",3,"K",1,1 );
-//addEntryDE( "","K",'C',"","","",3,"K",1,1 );
-//addEntryDE( "","G",'C',"","","",3,"K",1,1 );
-//addEntryDE( "","F",'C',"","","",3,"K",1,1 );
-//addEntryDE( "","V",'C',"","","",3,"K",1,1 );
-//addEntryDE( "","S",'C',"","","",3,"K",1,1 );
-//addEntryDE( "","Z",'C',"","","",3,"K",1,1 );
-//addEntryDE( "","J",'C',"","","",3,"K",1,1 );
-//addEntryDE( "","X",'C',"","","",3,"K",1,1 );
-//addEntryDE( "","H",'C',"","","",3,"K",1,1 );
-//addEntryDE( "","L",'C',"","","",3,"K",1,1 );
-//addEntryDE( "","M",'C',"","","",3,"K",1,1 );
-//addEntryDE( "","N",'C',"","","",3,"K",1,1 );
-//addEntryDE( "","R",'C',"","","",3,"K",1,1 );
-//addEntryDE( "","",'C',"","","",3,"C",1,1 );
-//addEntryDE( "","",'C',"K","","",3,"K",2,1 );
-//addEntryDE( "","",'C',"H","","",3,"K",2,1 );
-//addEntryDE( "","",'C',"H","S","",3,"K",3,1 );
+//addEntryDE( "","",'C',"H","S","",3,"CHS",3,1 );//paprastas keitimas (10 taisykle)
+//addEntryDE( "","",'C',"H","","",3,"CH",2,1 );//paprastas keitimas (9 taisykle)
+//addEntryDE("","",'C',"AOUPBTDKGFVSZJXHLMNR","","",3,"K",1,1 );//paprastas keitimas (7 taisykle)
+//addEntryDE("","AOUPBTDKGFVSZJXHLMNR",'C',"","","",3,"K",1,1 );//paprastas keitimas (7 taisykle)
+//addEntryDE("","",'C',"E","","",3,"C",1,1 );//paprastas keitimas (7 taisykle)
+//addEntryDE("","",'C',"I","","",3,"C",1,1 );//paprastas keitimas (7 taisykle)
+//addEntryDE("","",'C',"Y","","",3,"C",1,1 );//paprastas keitimas (7 taisykle)
+//addEntryDE( "","",'C',"K","","",3,"K",2,1 );//paprastas keitimas (8 taisykle)
+//addEntryDE( "","",'C',"","","",3,"C",1,1 );//paprastas keitimas (7 taisykle)
 
+//D raide
+//addEntryDE( "","",'D',"D","","",3,"D",1,2 );//paprastas keitimas (11 taisykle)
+//addEntryDE( "","",'D',"T","","",3,"T",1,2 );//paprastas keitimas (12 taisykle)
+//addEntryDE( "","",'D',"","","",3,"D",1,1 );//paprastas keitimas (11 taisykle)
+
+//E raide
+//addEntryDE( "","",'E',"H","LMNRAEIOUÃ„Ã–Ãœ","",3,"Ä–",1,1 );//paprastas keitimas (13 taisykle)- kai E ilgas
+//addEntryDE( "","",'E',"BCDFGHJKLMNPRTVZ","","",3,"Ä–",1,1 );//paprastas keitimas (13 taisykle)- kai E ilgas atviras skiemuo
+//addEntryDE( "","",'E',"H","","",3,"Ä–",1,1 );//paprastas keitimas (14 taisykle)
+//addEntryDE( "","",'E',"E","","",3,"Ä–",1,1 );//paprastas keitimas (14 taisykle)
+//addEntryDE( "","",'E',"I","BCDFGHJKLMNPRTVZ","",3,"EI",1,1 );//paprastas keitimas (14 taisykle)
+//addEntryDE( "","",'E',"I","","",3,"EJ",1,1 );//paprastas keitimas (14 taisykle)
+//addEntryDE( "","",'E',"","","",3,"Ä–",1,1 );//paprastas keitimas (14 taisykle)
 
 }
 
 function transkribavimoTaisyklesPL() {
 addEntryPL( "","I",'A',"_","","",2,"JA",2,2 );
 addEntryPL( "","",'A',"","","",3,"A",1,1 );
-addEntryPL( "","",'À',"BP","","",3,"OM",1,2 ); // A nosine didzioji \xC0
-addEntryPL( "","",'À',"","","",3,"ON",1,1 );
+addEntryPL( "","",'Ã€',"BP","","",3,"OM",1,2 ); // A nosine didzioji \xC0
+addEntryPL( "","",'Ã€',"","","",3,"ON",1,1 );
 addEntryPL( "","",'B',"","","",3,"B",1,1 );
 addEntryPL( "","",'C',"H","","",3,"CH",2,3 );
-addEntryPL( "","",'C',"Z","","",3,"È",2,2 ); //=> C su stogeliu didzioji \xC8
+addEntryPL( "","",'C',"Z","","",3,"Ãˆ",2,2 ); //=> C su stogeliu didzioji \xC8
 addEntryPL( "","",'C',"","","",3,"C",1,1 );
-addEntryPL( "","",'Ã',"","","",3,"C",1,1 ); // C su desininiu kirciu didzioji \xC3
+addEntryPL( "","",'Ãƒ',"","","",3,"C",1,1 ); // C su desininiu kirciu didzioji \xC3
 addEntryPL( "","",'D',"Z","","",3,"DZ",2,4 );
-addEntryPL( "","",'D',"Ê","","",3,"DZ",2,3 ); // Z su desininiu kirciu \xCA
-addEntryPL( "","",'D',"Ý","","",3,"DÞ",2,2 ); // Z su tasku \xDD => Z su stogeliu didzioji \xD
+addEntryPL( "","",'D',"ÃŠ","","",3,"DZ",2,3 ); // Z su desininiu kirciu \xCA
+addEntryPL( "","",'D',"Ã","","",3,"DÃž",2,2 ); // Z su tasku \xDD => Z su stogeliu didzioji \xD
 addEntryPL( "","",'D',"","","",3,"D",1,1 );
 addEntryPL( "","",'E',"","","",3,"E",1,1 );
-addEntryPL( "","",'Æ',"BP","","",3,"EM",1,2 ); // E nosine didzioji \xC6
-addEntryPL( "","",'Æ',"","","",3,"EN",1,1 );
+addEntryPL( "","",'Ã†',"BP","","",3,"EM",1,2 ); // E nosine didzioji \xC6
+addEntryPL( "","",'Ã†',"","","",3,"EN",1,1 );
 addEntryPL( "","",'F',"","","",3,"F",1,1 );
 addEntryPL( "","",'G',"","","",3,"G",1,1 );
 addEntryPL( "","",'H',"","","",3,"H",1,1 );
-addEntryPL( "","",'I',"EÆ","","",3,"",1,2 ); // E nosine didzioji \xC6
+addEntryPL( "","",'I',"EÃ†","","",3,"",1,2 ); // E nosine didzioji \xC6
 addEntryPL( "","",'I',"","","",3,"I",1,1 );
-addEntryPL( "","AEOÓ",'J',"","","",3,"I",1,2 ); // O su desininiu kirciu didzioji \xD3, U ??? 
+addEntryPL( "","AEOÃ“",'J',"","","",3,"I",1,2 ); // O su desininiu kirciu didzioji \xD3, U ??? 
 addEntryPL( "","",'J',"","","",3,"J",1,1 );
 addEntryPL( "","",'K',"","","",3,"K",1,1 );
-addEntryPL( "","",'L',"AOUÀÓ_","","",3,"LI",1,2 ); // A su nosine didzioji \xC0, O su desininiu kirciu didzioji \xD3, O ???
+addEntryPL( "","",'L',"AOUÃ€Ã“_","","",3,"LI",1,2 ); // A su nosine didzioji \xC0, O su desininiu kirciu didzioji \xD3, O ???
 addEntryPL( "","",'L',"","","",3,"L",1,1 );
-addEntryPL( "","",'Ù',"Ù","","",3,"",1,1 ); // L perbraukta didzioji \xD9
-addEntryPL( "","",'Ù',"","","",3,"L",1,1 );
+addEntryPL( "","",'Ã™',"Ã™","","",3,"",1,1 ); // L perbraukta didzioji \xD9
+addEntryPL( "","",'Ã™',"","","",3,"L",1,1 );
 addEntryPL( "","",'M',"","","",3,"M",1,1 );
 addEntryPL( "","",'N',"N","","",3,"",1,1 ); // dvi N is eiles
 addEntryPL( "","",'N',"","","",3,"N",1,1 );
-addEntryPL( "","",'Ñ',"","","",3,"N",1,1 ); // N su desininiu kirciu didzioji \xD1
+addEntryPL( "","",'Ã‘',"","","",3,"N",1,1 ); // N su desininiu kirciu didzioji \xD1
 addEntryPL( "","",'O',"_","","",1,"A",2,2 ); // Domeiko => Domeika (vyr)
 addEntryPL( "","",'O',"","","",3,"O",1,1 );
-addEntryPL( "","",'Ó',"","","",3,"U",1,1 ); // O su desininiu kirciu didzioji \xD3
+addEntryPL( "","",'Ã“',"","","",3,"U",1,1 ); // O su desininiu kirciu didzioji \xD3
 addEntryPL( "","",'P',"","","",3,"P",1,1 );
-addEntryPL( "C","H",'R',"Z","","",3,"Ð",2,4 ); //=> S su stogeliu didzioji \xD0
-addEntryPL( "","KPT",'R',"Z","","",3,"Ð",2,3 );
-addEntryPL( "","",'R',"Z","","",3,"Þ",2,2 ); //=> Z su stogeliu didzioji \xDE
+addEntryPL( "C","H",'R',"Z","","",3,"Ã",2,4 ); //=> S su stogeliu didzioji \xD0
+addEntryPL( "","KPT",'R',"Z","","",3,"Ã",2,3 );
+addEntryPL( "","",'R',"Z","","",3,"Ãž",2,2 ); //=> Z su stogeliu didzioji \xDE
 addEntryPL( "","",'R',"","","",3,"R",1,1 );
-addEntryPL( "","",'S',"Z","","",3,"Ð",2,2 ); //=> S su stogeliu didzioji \xD0
+addEntryPL( "","",'S',"Z","","",3,"Ã",2,2 ); //=> S su stogeliu didzioji \xD0
 addEntryPL( "","",'S',"","","",3,"S",1,1 );
-addEntryPL( "","",'Ú',"","","",3,"S",1,1 ); // S su desininiu kirciu didzioji \xDA
+addEntryPL( "","",'Ãš',"","","",3,"S",1,1 ); // S su desininiu kirciu didzioji \xDA
 addEntryPL( "","",'T',"T","","",3,"",1,1 ); // dvi T is eiles
 addEntryPL( "","",'T',"","","",3,"T",1,1 );
 addEntryPL( "","",'U',"","","",3,"U",1,1 );
@@ -150,16 +121,16 @@ addEntryPL( "","",'W',"","","",3,"V",1,1 );
 addEntryPL( "","",'Y',"_","","",1,"AS",2,2 ); //Wazny => Vaznas, bet Jerzy => Jezis ???
 addEntryPL( "","",'Y',"","","",3,"Y",1,1 );
 addEntryPL( "","",'Z',"","","",3,"Z",1,1 );
-addEntryPL( "","",'Ê',"","","",3,"Z",1,1 ); // Z su desininiu kirciu \xCA
-addEntryPL( "","",'Ý',"","","",3,"Þ",1,1 ); // Z su tasku \xDD => Z su stogeliu didzioji \xDE
+addEntryPL( "","",'ÃŠ',"","","",3,"Z",1,1 ); // Z su desininiu kirciu \xCA
+addEntryPL( "","",'Ã',"","","",3,"Ãž",1,1 ); // Z su tasku \xDD => Z su stogeliu didzioji \xDE
 addEntryPL( "","",'Q',"","","",3,"KU",1,1 );
 addEntryPL( "","",'V',"","","",3,"V",1,1 );
 addEntryPL( "","",'X',"","","",3,"KS",1,1 );
 addEntryPL( "","I",'_',"","","",1,"S",1,4 ); //Lontkovski => Lontkovskis
 addEntryPL( "C","Z",'_',"","","",1,"IUS",1,3 ); //Wonsowitcz => Vonsovi?ius
-addEntryPL( "","KWTFNZHÙ",'_',"","","",1,"AS",1,2 ); //L perbraukta didzioji \xD9, Wenzyk => Venzykas, Mecyslaw => Mecyslavas, Szymon => Symonas, Pavel => Pavelas, Gregorz => Gregozas, Kaitoch => Kaitochas, 
-addEntryPL( "","ÑÚ",'_',"","","",1,"IS",1,1 );  // N su desininiu kirciu didzioji \xD1, S su desininiu kirciu didzioji \xDA Pienkos => Penkosis
-addEntryPL( "","Ñ",'_',"","","",2,"Ë",1,1 );  // N su desininiu kirciu didzioji \xD1 => E su tasku didzioji \xCB
+addEntryPL( "","KWTFNZHÃ™",'_',"","","",1,"AS",1,2 ); //L perbraukta didzioji \xD9, Wenzyk => Venzykas, Mecyslaw => Mecyslavas, Szymon => Symonas, Pavel => Pavelas, Gregorz => Gregozas, Kaitoch => Kaitochas, 
+addEntryPL( "","Ã‘Ãš",'_',"","","",1,"IS",1,1 );  // N su desininiu kirciu didzioji \xD1, S su desininiu kirciu didzioji \xDA Pienkos => Penkosis
+addEntryPL( "","Ã‘",'_',"","","",2,"Ã‹",1,1 );  // N su desininiu kirciu didzioji \xD1 => E su tasku didzioji \xCB
 addEntryPL( "","",'_',"","","",3,"",1,1 );
 addEntryPL( "","",' ',"","","",3,"",1,1 );	
 }
