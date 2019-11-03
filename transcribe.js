@@ -55,18 +55,33 @@ function transkribavimoTaisyklesDE() {
 //addEntryDE( "","",'C',"","","",3,"C",1,1 );//paprastas keitimas (7 taisykle)
 
 //D raide
-//addEntryDE( "","",'D',"D","","",3,"D",1,2 );//paprastas keitimas (11 taisykle)
-//addEntryDE( "","",'D',"T","","",3,"T",1,2 );//paprastas keitimas (12 taisykle)
+//addEntryDE( "","",'D',"D","","",3,"D",2,1 );//paprastas keitimas (11 taisykle)
+//addEntryDE( "","",'D',"T","","",3,"T",2,1 );//paprastas keitimas (12 taisykle)
 //addEntryDE( "","",'D',"","","",3,"D",1,1 );//paprastas keitimas (11 taisykle)
 
 //E raide
-//addEntryDE( "","",'E',"H","LMNRAEIOUÄÖÜ","",3,"Ė",1,1 );//paprastas keitimas (13 taisykle)- kai E ilgas
-//addEntryDE( "","",'E',"BCDFGHJKLMNPRTVZ","","",3,"Ė",1,1 );//paprastas keitimas (13 taisykle)- kai E ilgas atviras skiemuo
-//addEntryDE( "","",'E',"H","","",3,"Ė",1,1 );//paprastas keitimas (14 taisykle)
-//addEntryDE( "","",'E',"E","","",3,"Ė",1,1 );//paprastas keitimas (14 taisykle)
-//addEntryDE( "","",'E',"I","BCDFGHJKLMNPRTVZ","",3,"EI",1,1 );//paprastas keitimas (14 taisykle)
-//addEntryDE( "","",'E',"I","","",3,"EJ",1,1 );//paprastas keitimas (14 taisykle)
-//addEntryDE( "","",'E',"","","",3,"Ė",1,1 );//paprastas keitimas (14 taisykle)
+//addEntryDE( "","",'E',"H","LMNRAEIOUÄÖÜ","",3,"Ė",3,1 );//paprastas keitimas (13 taisykle)- kai E ilgas
+//addEntryDE( "","",'E',"BCDFGHJKLMNPRTVZ","","",3,"Ė",2,1 );//paprastas keitimas (13 taisykle)- kai E ilgas atviras skiemuo
+//addEntryDE( "","",'E',"H","","",3,"Ė",2,1 );//paprastas keitimas (14 taisykle)
+//addEntryDE( "","",'E',"E","","",3,"Ė",2,1 );//paprastas keitimas (14 taisykle)
+//addEntryDE( "","",'E',"I","BCDFGHJKLMNPRTVZ","",3,"EI",3,1 );//paprastas keitimas (15 taisykle)
+//addEntryDE( "","",'E',"I","","",3,"EJ",2,1 );//paprastas keitimas (15 taisykle)
+//addEntryDE( "","",'E',"U","BCDFGHJKLMNPRTVZ","",3,"OI",3,1 );//paprastas keitimas (16 taisykle)
+//addEntryDE( "","",'E',"U","","",3,"OJ",2,1 );//paprastas keitimas (16 taisykle)
+//addEntryDE( "","",'E',"","","",3,"E",1,1 );//paprastas keitimas (14 taisykle)
+
+//F raide
+//addEntryDE( "","",'F',"F","","",3,"F",2,1 );//paprastas keitimas (14 taisykle)
+//addEntryDE( "","",'F',"","","",3,"F",1,1 );//paprastas keitimas (14 taisykle)
+
+
+//G raide
+//addEntryDE( "","",'G',"G","","",3,"G",2,1 );//paprastas keitimas (14 taisykle)
+//addEntryDE( "","",'G',"H","","",3,"G",2,1 );//paprastas keitimas (14 taisykle)
+//addEntryDE( "","",'G',"K","","",3,"K",2,1 );//paprastas keitimas (14 taisykle)
+//addEntryDE( "","",'G',"","","",3,"G",1,1 );//paprastas keitimas (14 taisykle)
+
+//
 
 }
 
