@@ -126,24 +126,66 @@ function transkribavimoTaisyklesDE() {
 //addEntryDE( "","",'O',"","","",3,"O",1,1 );//paprastas keitimas (29 taisykle)
 
 //Ö raide
-addEntryDE( "","",'Ö',"H","","",3,"Ė",2,1 );//paprastas keitimas (31 taisykle)
-addEntryDE( "","",'Ö',"BCDFGHJKLMNPRTVZ","","",3,"Ė",2,1 );//paprastas keitimas (30 taisykle)
-addEntryDE( "","",'Ö',"E","B","",3,"ĖB",2,1 );//paprastas keitimas (30 taisykle)
-addEntryDE( "","",'Ö',"E","C","",3,"ĖC",2,1 );//paprastas keitimas (30 taisykle)
-addEntryDE( "","",'Ö',"E","D","",3,"ĖD",2,1 );//paprastas keitimas (30 taisykle)
-addEntryDE( "","",'Ö',"E","F","",3,"ĖF",2,1 );//paprastas keitimas (30 taisykle)
-addEntryDE( "","",'Ö',"E","G","",3,"ĖG",2,1 );//paprastas keitimas (30 taisykle)
-addEntryDE( "","",'Ö',"E","H","",3,"Ė",2,1 );//paprastas keitimas (31 taisykle)
-addEntryDE( "","",'Ö',"E","J","",3,"ĖJ",2,1 );//paprastas keitimas (30 taisykle)
-addEntryDE( "","",'Ö',"E","K","",3,"ĖK",2,1 );//paprastas keitimas (30 taisykle)
-addEntryDE( "","",'Ö',"E","L","",3,"ĖL",2,1 );//paprastas keitimas (30 taisykle)
-addEntryDE( "","",'Ö',"E","M","",3,"ĖM",2,1 );//paprastas keitimas (30 taisykle)
-addEntryDE( "","",'Ö',"E","N","",3,"ĖN",2,1 );//paprastas keitimas (30 taisykle)
-addEntryDE( "","",'Ö',"E","P","",3,"ĖP",2,1 );//paprastas keitimas (30 taisykle)
-addEntryDE( "","",'Ö',"E","R","",3,"ĖR",2,1 );//paprastas keitimas (30 taisykle)
-addEntryDE( "","",'Ö',"E","T","",3,"ĖT",2,1 );//paprastas keitimas (30 taisykle)
-addEntryDE( "","",'Ö',"E","V","",3,"ĖV",2,1 );//paprastas keitimas (30 taisykle)
-addEntryDE( "","",'Ö',"E","Z","",3,"ĖZ",2,1 );//paprastas keitimas (30 taisykle)
+//addEntryDE( "","",'Ö',"H","","",3,"Ė",2,1 );//paprastas keitimas (31 taisykle)
+//addEntryDE( "","",'Ö',"BCDFGHJKLMNPRTVZ","","",3,"Ė",2,1 );//paprastas keitimas (30 taisykle)
+//addEntryDE( "","",'Ö',"E","B","",3,"ĖB",2,1 );//paprastas keitimas (30 taisykle)
+//addEntryDE( "","",'Ö',"E","C","",3,"ĖC",2,1 );//paprastas keitimas (30 taisykle)
+//addEntryDE( "","",'Ö',"E","D","",3,"ĖD",2,1 );//paprastas keitimas (30 taisykle)
+//addEntryDE( "","",'Ö',"E","F","",3,"ĖF",2,1 );//paprastas keitimas (30 taisykle)
+//addEntryDE( "","",'Ö',"E","G","",3,"ĖG",2,1 );//paprastas keitimas (30 taisykle)
+//addEntryDE( "","",'Ö',"E","H","",3,"Ė",2,1 );//paprastas keitimas (31 taisykle)
+//addEntryDE( "","",'Ö',"E","J","",3,"ĖJ",2,1 );//paprastas keitimas (30 taisykle)
+//addEntryDE( "","",'Ö',"E","K","",3,"ĖK",2,1 );//paprastas keitimas (30 taisykle)
+//addEntryDE( "","",'Ö',"E","L","",3,"ĖL",2,1 );//paprastas keitimas (30 taisykle)
+//addEntryDE( "","",'Ö',"E","M","",3,"ĖM",2,1 );//paprastas keitimas (30 taisykle)
+//addEntryDE( "","",'Ö',"E","N","",3,"ĖN",2,1 );//paprastas keitimas (30 taisykle)
+//addEntryDE( "","",'Ö',"E","P","",3,"ĖP",2,1 );//paprastas keitimas (30 taisykle)
+//addEntryDE( "","",'Ö',"E","R","",3,"ĖR",2,1 );//paprastas keitimas (30 taisykle)
+//addEntryDE( "","",'Ö',"E","T","",3,"ĖT",2,1 );//paprastas keitimas (30 taisykle)
+//addEntryDE( "","",'Ö',"E","V","",3,"ĖV",2,1 );//paprastas keitimas (30 taisykle)
+//addEntryDE( "","",'Ö',"E","Z","",3,"ĖZ",2,1 );//paprastas keitimas (30 taisykle)
+//addEntryDE( "","",'O',"Y","","",3,"OJ",3,1 );//samplaika lieka viename skiemenyje (32 taisykle)
+//addEntryDE( "","",'O',"I","","",3,"OJ",3,1 );//samplaika lieka viename skiemenyje (32 taisykle)
+//addEntryDE( "","",'O',"I","BCDFGHJKLMNPRTVZ","",3,"OI",3,1 );//samplaika lieka viename skiemenyje (32 taisykle)
+//addEntryDE( "","",'O',"Y","BCDFGHJKLMNPRTVZ","",3,"OI",3,1 );//samplaika lieka viename skiemenyje (32 taisykle)
+
+//P raide
+//addEntryDE( "","",'P',"P","","",3,"P",2,1 );//paprastas keitimas (33 taisykle)
+//addEntryDE( "","",'P',"F","","",3,"PF",2,1 );//paprastas keitimas (34 taisykle)
+//addEntryDE( "","",'P',"H","","",3,"F",2,1 );//paprastas keitimas (35 taisykle)
+//addEntryDE( "","",'P',"","","",3,"P",1,1 );//paprastas keitimas (33 taisykle)
+
+//Q raide
+//addEntryDE( "","",'Q',"U","","",3,"KV",2,1 );//paprastas keitimas (36 taisykle)
+//addEntryDE( "","",'Q',"","","",3,"KV",2,1 );//paprastas keitimas (36 taisykle)
+
+//R Raide
+//addEntryDE( "","",'R',"H","","",3,"R",1,1 );//paprastas keitimas (37 taisykle)
+//addEntryDE( "","",'R',"R","","",3,"R",1,1 );//paprastas keitimas (37 taisykle)
+//addEntryDE( "","",'R',"","","",3,"R",1,1 );//paprastas keitimas (37 taisykle)
+
+//S Raide
+//addEntryDE( "","",'S',"BCDFGHJKLMNRTVZ","","",3,"S",2,1 );//paprastas keitimas (38 taisykle)
+//addEntryDE( "","",'S',"AOUIEÄÖÜ","","",3,"Z",1,1 );//paprastas keitimas (38 taisykle)
+//addEntryDE( "","",'S',"C","H","",3,"Š",3,1 );//paprastas keitimas (39 taisykle)
+//addEntryDE( "","",'S',"P","","",3,"ŠP",2,1 );//paprastas keitimas (40 taisykle)// kaip pritaikyti taisykle tik zodzio pradziai?
+//addEntryDE( "","",'ß',"","","",3,"S",2,1 );//paprastas keitimas (41 taisykle)
+//addEntryDE( "","",'S',"S","","",3,"Š",2,1 );//paprastas keitimas (41 taisykle)
+//addEntryDE( "","",'S',"T","","",3,"ŠT",2,1 );//paprastas keitimas (42 taisykle)// kaip pritaikyti taisykle tik zodzio pradziai?
+
+//T raide
+//addEntryDE("","",'T',"Z","S","CH",3,"Č",1,1 );//paprastas keitimas (46 taisykle)
+//addEntryDE("","",'T',"S","C","H",3,"Č",1,1 );//paprastas keitimas (46 taisykle)
+//addEntryDE("","",'T',"I","O","N",3,"CION",4,1 );//paprastas keitimas (44 taisykle)
+//addEntryDE("","",'T',"T","","",3,"T",2,1 );//paprastas keitimas (43 taisykle)
+//addEntryDE("","",'T',"H","","",3,"T",2,1 );//paprastas keitimas (43 taisykle)
+//addEntryDE("","",'T',"Z","","",3,"C",2,1 );//paprastas keitimas (45 taisykle)
+//addEntryDE("","",'T',"","","",3,"T",1,1 );//paprastas keitimas (43 taisykle)
+
+
+
+//addEntryDE( "","",'S',"C","H","",3,"Š",!!!!!!!3!!!!!!!!! --> ar sitas skaicius imtinai ar neimtinai?,1 );//paprastas keitimas (38 taisykle)
+
 
 }
 
