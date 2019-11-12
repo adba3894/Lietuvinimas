@@ -24,7 +24,7 @@ function addEntryPL(KKont2, KKont1, ES, DKont1, DKont2, DKont3, Gim, FonV, PoslR
 
 
 function transkribavimoTaisyklesDE() {
-//A raide (2  taisykle ziuret)
+//A raide 
 addEntryDE( "","",'A',"Y","BCDFGHJKLMNPRTVZ","",3,"AI",3,1 );// samplaika lieka viename skiemenyje (4 taisykle)
 addEntryDE( "","",'A',"I","BCDFGHJKLMNPRTVZ","",3,"AI",3,1 );// samplaika lieka viename skiemenyje (4 taisykle)
 addEntryDE( "","",'Ä',"U","BCDFGHJKLMNPRTVZ","",3,"OI",3,1 );//samplaika lieka viename skiemenyje (5 taisykle)
@@ -46,11 +46,11 @@ addEntryDE( "","",'B',"","","",3,"B",1,1 );//(6 taisykle)
 //C raide
 addEntryDE( "","",'C',"H","S","",3,"CHS",3,1 );//(10 taisykle)
 addEntryDE( "","",'C',"H","","",3,"CH",2,1 );//(9 taisykle)
-addEntryDE("","",'C',"AOUPBTDKGFVSZJXHLMNR","","",3,"K",1,1 );//(7 taisykle)
-addEntryDE("","AOUPBTDKGFVSZJXHLMNR",'C',"","","",3,"K",1,1 );//(7 taisykle)
-addEntryDE("","",'C',"E","","",3,"C",1,1 );//(7 taisykle)
-addEntryDE("","",'C',"I","","",3,"C",1,1 );//(7 taisykle)
-addEntryDE("","",'C',"Y","","",3,"C",1,1 );//(7 taisykle)
+addEntryDE("","",'C',"AOUPBTDKGFVSZJXHLMNR","","",3,"K",2,1 );//(7 taisykle)
+addEntryDE("","AOUPBTDKGFVSZJXHLMNR",'C',"","","",3,"K",2,1 );//(7 taisykle)
+addEntryDE("","",'C',"E","","",3,"C",2,1 );//(7 taisykle)
+addEntryDE("","",'C',"I","","",3,"C",2,1 );//(7 taisykle)
+addEntryDE("","",'C',"Y","","",3,"C",2,1 );//(7 taisykle)
 addEntryDE( "","",'C',"K","","",3,"K",2,1 );//(8 taisykle)
 addEntryDE( "","",'C',"","","",3,"C",1,1 );//(7 taisykle)
 
@@ -81,11 +81,11 @@ addEntryDE( "","",'G',"H","","",3,"G",2,1 );//(18 taisykle)
 addEntryDE( "","",'G',"K","","",3,"K",2,1 );//(19 taisykle)
 addEntryDE( "","",'G',"","","",3,"G",1,1 );//(18 taisykle)
 //H raide
-addEntryDE( "","BCDFHKLMNPVZ",'H',"","","",3,"H",1,1 );//(20 taisykle)
-addEntryDE( "","G",'H',"","","",3,"G",1,1 );//(20 taisykle)
-addEntryDE( "","J",'H',"","","",3,"J",1,1 );//(20 taisykle)
-addEntryDE( "","R",'H',"","","",3,"R",1,1 );//(20 taisykle)
-addEntryDE( "","T",'H',"","","",3,"T",1,1 );//(20 taisykle)
+addEntryDE( "","BCDFHKLMNPVZ",'H',"","","",3,"H",2,1 );//(20 taisykle)
+addEntryDE( "","G",'H',"","","",3,"G",2,1 );//(20 taisykle)
+addEntryDE( "","J",'H',"","","",3,"J",2,1 );//(20 taisykle)
+addEntryDE( "","R",'H',"","","",3,"R",2,1 );//(20 taisykle)
+addEntryDE( "","T",'H',"","","",3,"T",2,1 );//(20 taisykle)
 addEntryDE( "","",'H',"","","",3,"H",1,1 );//(20 taisykle)
 //I raide
 addEntryDE( "","",'I',"H","LMNRAEIOUÄÖÜ","",3,"Y",3,1 );//(21 taisykle)- kai E ilgas
@@ -105,7 +105,7 @@ addEntryDE( "","",'K',"K","","",3,"K",2,1 );//(25 taisykle)
 addEntryDE( "","",'K',"","","",3,"K",1,1 );//(25 taisykle)
 
 //L raide
-addEntryDE( "","L",'L',"U","","",3,"LI",2,1 );//(26 taisykle)
+addEntryDE( "","L",'L',"U","","",3,"LI",3,1 );//(26 taisykle)
 addEntryDE( "","",'L',"U","","",3,"LI",2,1 );//(26 taisykle)
 addEntryDE( "","L",'L',"","","",3,"L",2,1 );//(26 taisykle)
 addEntryDE( "","",'L',"","","",3,"L",1,1 );//(26 taisykle)
@@ -126,24 +126,24 @@ addEntryDE( "","",'O',"","","",3,"O",1,1 );//(29 taisykle)
 //Ö raide
 addEntryDE( "","",'Ö',"H","","",3,"Ė",2,1 );//(31 taisykle)
 addEntryDE( "","",'Ö',"BCDFGHJKLMNPRTVZ","","",3,"Ė",2,1 );//(30 taisykle)
-addEntryDE( "","",'Ö',"E","B","",3,"ĖB",2,1 );//(30 taisykle)
-addEntryDE( "","",'Ö',"E","C","",3,"ĖC",2,1 );//(30 taisykle)
-addEntryDE( "","",'Ö',"E","D","",3,"ĖD",2,1 );//(30 taisykle)
-addEntryDE( "","",'Ö',"E","F","",3,"ĖF",2,1 );//(30 taisykle)
-addEntryDE( "","",'Ö',"E","G","",3,"ĖG",2,1 );//(30 taisykle)
-addEntryDE( "","",'Ö',"E","H","",3,"Ė",2,1 );//(31 taisykle)
-addEntryDE( "","",'Ö',"E","J","",3,"ĖJ",2,1 );//(30 taisykle)
-addEntryDE( "","",'Ö',"E","K","",3,"ĖK",2,1 );//(30 taisykle)
-addEntryDE( "","",'Ö',"E","L","",3,"ĖL",2,1 );//(30 taisykle)
-addEntryDE( "","",'Ö',"E","M","",3,"ĖM",2,1 );//(30 taisykle)
-addEntryDE( "","",'Ö',"E","N","",3,"ĖN",2,1 );//(30 taisykle)
-addEntryDE( "","",'Ö',"E","P","",3,"ĖP",2,1 );//(30 taisykle)
-addEntryDE( "","",'Ö',"E","R","",3,"ĖR",2,1 );//(30 taisykle)
-addEntryDE( "","",'Ö',"E","T","",3,"ĖT",2,1 );//(30 taisykle)
-addEntryDE( "","",'Ö',"E","V","",3,"ĖV",2,1 );//(30 taisykle)
-addEntryDE( "","",'Ö',"E","Z","",3,"ĖZ",2,1 );//(30 taisykle)
-addEntryDE( "","",'O',"Y","","",3,"OJ",3,1 );//samplaika lieka viename skiemenyje (32 taisykle)
-addEntryDE( "","",'O',"I","","",3,"OJ",3,1 );//samplaika lieka viename skiemenyje (32 taisykle)
+addEntryDE( "","",'Ö',"E","B","",3,"ĖB",3,1 );//(30 taisykle)
+addEntryDE( "","",'Ö',"E","C","",3,"ĖC",3,1 );//(30 taisykle)
+addEntryDE( "","",'Ö',"E","D","",3,"ĖD",3,1 );//(30 taisykle)
+addEntryDE( "","",'Ö',"E","F","",3,"ĖF",3,1 );//(30 taisykle)
+addEntryDE( "","",'Ö',"E","G","",3,"ĖG",3,1 );//(30 taisykle)
+addEntryDE( "","",'Ö',"E","H","",3,"Ė",3,1 );//(31 taisykle)
+addEntryDE( "","",'Ö',"E","J","",3,"ĖJ",3,1 );//(30 taisykle)
+addEntryDE( "","",'Ö',"E","K","",3,"ĖK",3,1 );//(30 taisykle)
+addEntryDE( "","",'Ö',"E","L","",3,"ĖL",3,1 );//(30 taisykle)
+addEntryDE( "","",'Ö',"E","M","",3,"ĖM",3,1 );//(30 taisykle)
+addEntryDE( "","",'Ö',"E","N","",3,"ĖN",3,1 );//(30 taisykle)
+addEntryDE( "","",'Ö',"E","P","",3,"ĖP",3,1 );//(30 taisykle)
+addEntryDE( "","",'Ö',"E","R","",3,"ĖR",3,1 );//(30 taisykle)
+addEntryDE( "","",'Ö',"E","T","",3,"ĖT",3,1 );//(30 taisykle)
+addEntryDE( "","",'Ö',"E","V","",3,"ĖV",3,1 );//(30 taisykle)
+addEntryDE( "","",'Ö',"E","Z","",3,"ĖZ",3,1 );//(30 taisykle)
+addEntryDE( "","",'O',"Y","","",3,"OJ",2,1 );//samplaika lieka viename skiemenyje (32 taisykle)
+addEntryDE( "","",'O',"I","","",3,"OJ",2,1 );//samplaika lieka viename skiemenyje (32 taisykle)
 addEntryDE( "","",'O',"I","BCDFGHJKLMNPRTVZ","",3,"OI",3,1 );//samplaika lieka viename skiemenyje (32 taisykle)
 addEntryDE( "","",'O',"Y","BCDFGHJKLMNPRTVZ","",3,"OI",3,1 );//samplaika lieka viename skiemenyje (32 taisykle)
 
@@ -155,11 +155,11 @@ addEntryDE( "","",'P',"","","",3,"P",1,1 );//(33 taisykle)
 
 //Q raide
 addEntryDE( "","",'Q',"U","","",3,"KV",2,1 );//(36 taisykle)
-addEntryDE( "","",'Q',"","","",3,"KV",2,1 );//(36 taisykle)
+addEntryDE( "","",'Q',"","","",3,"KV",1,1 );//(36 taisykle)
 
 //R Raide
-addEntryDE( "","",'R',"H","","",3,"R",1,1 );//(37 taisykle)
-addEntryDE( "","",'R',"R","","",3,"R",1,1 );//(37 taisykle)
+addEntryDE( "","",'R',"H","","",3,"R",2,1 );//(37 taisykle)
+addEntryDE( "","",'R',"R","","",3,"R",2,1 );//(37 taisykle)
 addEntryDE( "","",'R',"","","",3,"R",1,1 );//(37 taisykle)
 
 //S Raide
@@ -167,13 +167,13 @@ addEntryDE( "","",'S',"BCDFGHJKLMNRTVZ","","",3,"S",2,1 );//(38 taisykle)
 addEntryDE( "","",'S',"AOUIEÄÖÜ","","",3,"Z",1,1 );//(38 taisykle)
 addEntryDE( "","",'S',"C","H","",3,"Š",3,1 );//(39 taisykle)
 addEntryDE( "","_",'S',"P","","",3,"ŠP",2,1 );//(40 taisykle)// kaip pritaikyti taisykle tik zodzio pradziai?
-addEntryDE( "","",'ß',"","","",3,"S",2,1 );//(41 taisykle)
+addEntryDE( "","",'ß',"","","",3,"S",1,1 );//(41 taisykle)
 addEntryDE( "","",'S',"S","","",3,"Š",2,1 );//(41 taisykle)
 addEntryDE( "","_",'S',"T","","",3,"ŠT",2,1 );//(42 taisykle)// kaip pritaikyti taisykle tik zodzio pradziai?
 
 //T raide
-addEntryDE("","",'T',"Z","S","CH",3,"Č",1,1 );//(46 taisykle)
-addEntryDE("","",'T',"S","C","H",3,"Č",1,1 );//(46 taisykle)
+addEntryDE("","",'T',"Z","S","CH",3,"Č",4,1 );//(46 taisykle)
+addEntryDE("","",'T',"S","C","H",3,"Č",4,1 );//(46 taisykle)
 addEntryDE("","",'T',"I","O","N",3,"CION",4,1 );//(44 taisykle)
 addEntryDE("","",'T',"T","","",3,"T",2,1 );//(43 taisykle)
 addEntryDE("","",'T',"H","","",3,"T",2,1 );//(43 taisykle)
@@ -182,7 +182,7 @@ addEntryDE("","",'T',"","","",3,"T",1,1 );//(43 taisykle)
 
 //U,Ü,UE raides
 addEntryDE( "","",'U',"H","LMNRAEIOUÄÖÜ","",3,"Ū",3,1 );//(47 taisykle)- kai U ilgas
-addEntryDE( "","",'U',"U","","",3,"Ū",1,1 );//(47 taisykle)- kai U ilgas
+addEntryDE( "","",'U',"U","","",3,"Ū",2,1 );//(47 taisykle)- kai U ilgas
 addEntryDE( "","",'U',"B","","",3,"ŪB",2,1 );//(47 taisykle)- kai U ilgas
 addEntryDE( "","",'U',"C","","",3,"ŪC",2,1 );//(47 taisykle)- kai U ilgas
 addEntryDE( "","",'U',"D","","",3,"ŪD",2,1 );//(47 taisykle)- kai U ilgas
@@ -200,31 +200,48 @@ addEntryDE( "","",'U',"T","","",3,"ŪT",2,1 );//(47 taisykle)- kai U ilgas
 addEntryDE( "","",'U',"V","","",3,"ŪV",2,1 );//(47 taisykle)- kai U ilgas
 addEntryDE( "","",'U',"Z","","",3,"ŪZ",2,1 );//(47 taisykle)- kai U ilgas
 addEntryDE( "","",'U',"","","",3,"U",1,1 );//(43 taisykle) kai U trumpas
-addEntryDE( "","_",'U',"E","H","LMNRAEIOUÄÖÜ",3,"Y",3,1 );//48 taisykle,
+addEntryDE( "","_",'U',"E","H","LMNRAEIOUÄÖÜ",3,"Y",4,1 );//48 taisykle,
 addEntryDE( "","_",'U',"E","BCDFGHJKLMNRTVZ","",3,"Y",3,1 );//48 taisykle,
 addEntryDE( "","_",'U',"E","H","",3,"I",3,1 );//48 taisykle
 addEntryDE( "","J",'Ü',"LMNRAEIOUÄÖÜ","","",3,"Ū",3,1 );//48 
 addEntryDE( "","J",'Ü',"BCDFGHJKLMNRTVZ","","",3,"Ū",3,1 );//48 
 addEntryDE( "","J",'Ü',"","","",3,"U",2,1 );//48 taisykle
 addEntryDE( "","J",'Ü',"","","",3,"U",2,1 );//48 taisykle
-addEntryDE( "","J",'U',"E","H","LMNRAEIOUÄÖÜ",3,"Ū",4,1 );//48 
+addEntryDE( "","J",'U',"E","H","LMNRAEIOUÄÖÜ",3,"Ū",5,1 );//48 
 addEntryDE( "","J",'U',"E","BCDFGHJKLMNRTVZ","",3,"Ū",4,1 );//48 
-addEntryDE( "","J",'U',"E","","",3,"U",2,1 );//48 taisykle
+addEntryDE( "","J",'U',"E","","",3,"U",3,1 );//48 taisykle
 addEntryDE( "","J",'U',"E","","",3,"U",3,1 );//48 taisykle
 addEntryDE( "","_",'Ü',"H","LMNRAEIOUÄÖÜ","",3,"Y",3,1 );//48 taisykle,
 addEntryDE( "","_",'Ü',"BCDFGHJKLMNRTVZ","","",3,"Y",2,1 );//48 taisykle,
-addEntryDE( "","_",'Ü',"H","","",3,"Y",3,1 );//51 taisykle
-
-
+addEntryDE( "","_",'Ü',"H","","",3,"Y",2,1 );//50 taisykle
 addEntryDE( "","",'U',"E","H","LMNRAEIOUÄÖÜ",3,"IŪ",4,1 );//48 
-addEntryDE( "","",'U',"E","BCDFGHJKLMNRTVZ","",3,"IŪ",4,1 );//48 
-addEntryDE( "","",'Ü',"BCDFGHJKLMNRTVZ","","",3,"IŪ",3,1 );//48 
+addEntryDE( "","",'U',"E","BCDFGHJKLMNRTVZ","",3,"IŪ",3,1 );//48 
+addEntryDE( "","",'Ü',"BCDFGHJKLMNRTVZ","","",3,"IŪ",2,1 );//48 
 addEntryDE( "","",'Ü',"H","LMNRAEIOUÄÖÜ","",3,"IŪ",3,1 );//48 
-addEntryDE( "","",'Ü',"","","",3,"IU",3,1 );//48 taisykle
-addEntryDE( "","",'U',"E","","",3,"IU",3,1 );//48 taisykle
-addEntryDE( "","",'Ü',"","","",3,"IU",3,1 );//48 taisykle
-addEntryDE( "","_",'U',"E","H","",3,"Y",3,1 );//51 taisykle
+addEntryDE( "","",'Ü',"","","",3,"IU",1,1 );//48 taisykle
+addEntryDE( "","",'U',"E","","",3,"IU",2,1 );//48 taisykle
+addEntryDE( "","",'Ü',"","","",3,"IU",1,1 );//48 taisykle
+addEntryDE( "","_",'U',"E","H","",3,"Y",3,1 );//50 taisykle
 addEntryDE( "","",'U',"E","H","",3,"IU",3,1 );//48 taisykle
+
+//V raide
+addEntryDE( "","",'V',"","","",3,"F",1,1 );//51 taisykle
+
+//W raide
+addEntryDE( "","",'W',"","","",3,"V",1,1 );//52 taisykle
+
+//X raide
+addEntryDE( "","",'X',"","","",3,"KS",2,1 );//53 taisykle
+
+//Y raide
+addEntryDE( "","",'Y',"BCDFGHJKLMNRTVZ","","",3,"Y",2,1 );//54 taisykle
+addEntryDE( "","AOUIEÄÖÜ",'Y',"AOUIEÄÖÜ_","","",3,"Y",1,1 );//54 taisykle
+addEntryDE( "","",'Y',"","","",3,"I",1,1 );//54 taisykle
+
+//Z raide
+addEntryDE( "","",'Z',"S","C","H",3,"Č",4,1 );//54 taisykle
+addEntryDE( "","",'Z',"Z","","",3,"C",2,1 );//54 taisykle
+addEntryDE( "","",'Z',"","","",3,"C",1,1 );//54 taisykle
 
 
 
