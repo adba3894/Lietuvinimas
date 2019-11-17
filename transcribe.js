@@ -72,11 +72,8 @@ addEntryDE( "","",'A',"E","H","",3,"Ė",3,1 );//(3 taisykle) - paprastas keitima
 addEntryDE( "","",'A',"A","","",3,"A",2,1 );//(1 taisykle)
 addEntryDE( "","",'A',"","","",3,"A",1,1 );////(1 taisykle)
 
-
-
-
-
 //B raide
+addEntryDE( "","",'E',"BCDFGJKLMNPQRSTVWXYZ","BCDFGHJKLMNPQRSTVWXYZ","",3,"E",1,1 );//(2 taisykle) - balsis trumpas kai po jo eina dvi priebalses priklausancios tom paciom morfemom
 addEntryDE( "","",'E',"B","B","",3,"EB",3,1 );//(13 taisykle)- kai E ilgas atviras skiemuo
 addEntryDE( "","",'E',"C","K","",3,"EK",3,1 );//(13 taisykle)- kai E ilgas atviras skiemuo
 addEntryDE( "","",'E',"D","D","",3,"ED",3,1 );//(13 taisykle)- kai E ilgas atviras skiemuo
@@ -88,9 +85,9 @@ addEntryDE( "","",'E',"P","P","",3,"EP",3,1 );//(13 taisykle)- kai E ilgas atvir
 addEntryDE( "","",'E',"R","R","",3,"ER",3,1 );//(13 taisykle)- kai E ilgas atviras skiemuo
 addEntryDE( "","",'E',"S","S","",3,"ES",3,1 );//(13 taisykle)- kai E ilgas atviras skiemuo
 addEntryDE( "","",'E',"T","T","",3,"ET",3,1 );//(13 taisykle)- kai E ilgas atviras skiemuo
-addEntryDE( "","",'E',"T","Z","",3,"ETZ",3,1 );//(13 taisykle)- kai E ilgas atviras skiemuo
+addEntryDE( "","",'E',"T","Z","",3,"EC",3,1 );//(13 taisykle)- kai E ilgas atviras skiemuo
 addEntryDE( "","",'E',"P","F","",3,"EPF",3,1 );//(13 taisykle)- kai E ilgas atviras skiemuo
-addEntryDE( "","",'E',"X","","",3,"EKS",3,1 );//(13 taisykle)- kai E ilgas atviras skiemuo
+addEntryDE( "","",'E',"X","","",3,"EKS",2,1 );//(13 taisykle)- kai E ilgas atviras skiemuo
 addEntryDE( "","",'B',"B","","",3,"B",2,1 );//(6 taisykle)
 addEntryDE( "","",'B',"","","",3,"B",1,1 );//(6 taisykle)
 
@@ -105,23 +102,21 @@ addEntryDE("","",'C',"Y","","",3,"C",2,1 );//(7 taisykle)
 addEntryDE( "","",'C',"K","","",3,"K",2,1 );//(8 taisykle)
 addEntryDE( "","",'C',"","","",3,"C",1,1 );//(7 taisykle)
 
-
 //D raide
 addEntryDE( "","",'D',"D","","",3,"D",2,1 );//(11 taisykle)
 addEntryDE( "","",'D',"T","","",3,"T",2,1 );//(12 taisykle)
 addEntryDE( "","",'D',"","","",3,"D",1,1 );//(11 taisykle)
 
-
-//Ziureti nuo cia
-
 //E raide
-addEntryDE( "","",'E',"H","LMNRAEIOUÄÖÜ","",3,"Ė",2,1 );//(13 taisykle)- kai E ilgas
-addEntryDE( "","",'E',"BCDFGJKLMNRPRTVZ","","",3,"Ė",1,1 );//(13 taisykle)- kai E ilgas atviras skiemuo
-
+addEntryDE( "","",'E',"H","LMNRAEIOUÄÖÜ","",3,"Ė",2,1 );//(13 taisykle)- kai po e eina netariamoji h esanti pries ...
+addEntryDE( "","I",'E',"","","",3,"Y",2,1 );//(13 taisykle)- E ilgas kai pries ji eina I
+addEntryDE( "","BCDFGJKLMNPQRSTVWXYZ",'E',"BCDFGJKLMNPQRSTVWXYZ","","",3,"Ė",1,1 );//(13 tais.)- kai E kirciuoto skiemens gale-REIKA KAZKAIP SUGALVOT-JEI SIA TAISYKLE PRITAIKE 1 KARTA,KAD DAUGIAU NEBETAIKYTU
 addEntryDE( "","",'E',"H","","",3,"Ė",2,1 );//(14 taisykle)
-addEntryDE( "","",'E',"E","","",3,"Ė",2,1 );//(14 taisykle)
+addEntryDE( "","",'E',"E","","",3,"Ė",2,1 );//(14 taisykle)- kai E ilgas, jis pazymetas dviguba balse
 addEntryDE( "","",'E',"I","BCDFGHJKLMNPRTVZ","",3,"EI",2,1 );//(15 taisykle)
-addEntryDE( "","",'E',"I","","",3,"EJ",2,1 );//(15 taisykle)
+addEntryDE( "","",'E',"Y","BCDFGHJKLMNPRTVZ","",3,"EI",2,1 );//(15 taisykle)
+addEntryDE( "","",'E',"I","EAEIOUÖÜ","",3,"EJ",2,1 );//(15 taisykle)
+addEntryDE( "","",'E',"Y","EAEIOUÖÜ","",3,"EJ",2,1 );//(15 taisykle)
 addEntryDE( "","",'E',"U","BCDFGHJKLMNPRTVZ","",3,"OI",2,1 );//(16 taisykle)
 addEntryDE( "","",'E',"U","","",3,"OJ",2,1 );//(16 taisykle)
 addEntryDE( "","",'E',"","","",3,"E",1,1 );//(14 taisykle)
@@ -130,14 +125,13 @@ addEntryDE( "","",'E',"","","",3,"E",1,1 );//(14 taisykle)
 addEntryDE( "","",'F',"F","","",3,"F",2,1 );//(17 taisykle)
 addEntryDE( "","",'F',"","","",3,"F",1,1 );//(17 taisykle)
 
-
 //G raide
 addEntryDE( "","",'G',"G","","",3,"G",2,1 );//(18 taisykle)
 addEntryDE( "","",'G',"H","","",3,"G",3,1 );//(18 taisykle)
 addEntryDE( "","",'G',"K","","",3,"K",2,1 );//(19 taisykle)
 addEntryDE( "","",'G',"","","",3,"G",1,1 );//(18 taisykle)
 
-
+//pradeti nuo cia
 //H raide
 addEntryDE( "","BCDFHKLMNPVZ",'H',"IAUOÄÖÜ","","",3,"H",2,1 );//(20 taisykle) SKIEMENS PRADYIOJE
 addEntryDE( "","J",'H',"","","",3,"J",2,1 );//(20 taisykle)
@@ -295,7 +289,7 @@ addEntryDE( "","",'W',"","","",3,"V",1,1 );//52 taisykle
 addEntryDE( "","",'X',"","","",3,"KS",2,1 );//53 taisykle
 
 //Y raide
-addEntryDE( "","",'Y',"BCDFGHJKLMNRTVZ","","",3,"Y",2,1 );//54 taisykle
+//addEntryDE( "","",'Y',"BCDFGHJKLMNRTVZ","","",3,"Y",2,1 );//54 taisykle
 addEntryDE( "","AOUIEÄÖÜ",'Y',"AOUIEÄÖÜ_","","",3,"Y",1,1 );//54 taisykle
 addEntryDE( "","",'Y',"","","",3,"I",1,1 );//54 taisykle
 
@@ -304,7 +298,7 @@ addEntryDE( "","",'Z',"S","C","H",3,"Č",4,1 );//54 taisykle
 addEntryDE( "","",'Z',"Z","","",3,"C",2,1 );//54 taisykle
 addEntryDE( "","",'Z',"","","",3,"C",1,1 );//54 taisykle
 
-addEntryDE( "","KWTFNZHDS",'_',"","","",1,"AS",1,2 );
+addEntryDE( "","KWTFNZHDSG",'_',"","","",1,"AS",1,2 );
 addEntryDE( "","R",'_',"","","",1,"IS",1,2 );
 
 }
