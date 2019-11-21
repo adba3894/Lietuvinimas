@@ -23,7 +23,6 @@ function addEntryPL(KKont2, KKont1, ES, DKont1, DKont2, DKont3, Gim, FonV, PoslR
 
 
 function transkribavimoTaisyklesDE() {
-addEntryDE( "","_",'S',"C","H","",3,"Š",3,1 );//(39 taisykle)
 
 //A raide 
 addEntryDE( "","",'A',"E","BCDFGHJKLMNPQRSTVWXYZ","BCDFGHJKLMNPQRSTVWXYZ",3,"E",2,1 );//(2 taisykle) - balsis trumpas kai po jo eina dvi priebalses priklausancios tom paciom morfemom
@@ -252,22 +251,26 @@ addEntryDE( "","",'R',"R","","",3,"R",2,1 );//(37 taisykle)
 addEntryDE( "","",'R',"","","",3,"R",1,1 );//(37 taisykle)
 
 //S Raide
-addEntryDE( "","",'S',"BCDFGHJKLMNRVZ","","",3,"S",2,1 );//(38 taisykle)
-addEntryDE( "","",'S',"AOUIEÄÖÜ","","",3,"Z",1,1 );//(38 taisykle)
-addEntryDE( "","_",'S',"C","H","",3,"Š",3,1 );//(39 taisykle)
+addEntryDE("","T",'Z',"S","C","H",3,"Č",4,1 );//(46 taisykle)
 addEntryDE( "","",'S',"C","H","",3,"Š",3,1 );//(39 taisykle)
 addEntryDE( "","_",'S',"P","","",3,"ŠP",2,1 );//(40 taisykle)// kaip pritaikyti taisykle tik zodzio pradziai?
+addEntryDE( "","BCDFGHJKLMNPQRSTVWXZ",'S',"P","","",3,"ŠP",2,1 );//(40 taisykle)// kaip pritaikyti taisykle tik zodzio pradziai?
+addEntryDE( "","",'S',"_","","",3,"S",1,1 );//(41 taisykle)
+addEntryDE( "","",'S',"S","","",3,"S",2,1 );//(41 taisykle)
+addEntryDE( "","_",'S',"T","","",3,"ŠT",2,1 );//(42 taisykle)// kaip pritaikyti taisykle tik zodzio pradziai?
+addEntryDE( "","BCDFGHJKLMNPQRSTVWXZ",'S',"T","","",3,"ŠT",2,1 );//(42 taisykle)// kaip pritaikyti taisykle tik zodzio pradziai?
+addEntryDE( "","AOUIEÄÖÜY",'S',"BCDFGHJKLMNPQRSTVWXZ","","",3,"S",1,1 );//(38 taisykle)
+addEntryDE( "","",'S',"AOUIEÄÖÜY","","",3,"Z",1,1 );//(38 taisykle)
 addEntryDE( "","",'ß',"","","",3,"S",1,1 );//(41 taisykle)
-addEntryDE( "","",'S',"S","","",3,"Š",2,1 );//(41 taisykle)
-addEntryDE( "","",'S',"T","","",3,"ŠT",2,1 );//(42 taisykle)// kaip pritaikyti taisykle tik zodzio pradziai?
+addEntryDE( "","",'S',"","","",3,"S",1,1 );//(42 taisykle)// kaip pritaikyti taisykle tik zodzio pradziai?
 
 //T raide
-addEntryDE("","",'T',"Z","S","CH",3,"Č",4,1 );//(46 taisykle)
 addEntryDE("","",'T',"S","C","H",3,"Č",4,1 );//(46 taisykle)
+addEntryDE("","",'T',"Z","","",3,"C",2,1 );//(45 taisykle)
 addEntryDE("","",'T',"I","O","N",3,"CION",4,1 );//(44 taisykle)
 addEntryDE("","",'T',"T","","",3,"T",2,1 );//(43 taisykle)
 addEntryDE("","",'T',"H","","",3,"T",2,1 );//(43 taisykle)
-addEntryDE("","",'T',"Z","","",3,"C",2,1 );//(45 taisykle)
+
 addEntryDE("","",'T',"","","",3,"T",1,1 );//(43 taisykle)
 
 //U,Ü,UE raides
@@ -333,8 +336,12 @@ addEntryDE( "","",'Z',"S","C","H",3,"Č",4,1 );//54 taisykle
 addEntryDE( "","",'Z',"Z","","",3,"C",2,1 );//54 taisykle
 addEntryDE( "","",'Z',"","","",3,"C",1,1 );//54 taisykle
 
-addEntryDE( "","KWTFNZHDSG",'_',"","","",1,"AS",1,2 );
+//Galunes
+addEntryDE( "","KWTFNZHDSGPM",'_',"","","",1,"AS",1,2 );
 addEntryDE( "","RL",'_',"","","",1,"IS",1,2 );
+addEntryDE( "","I",'_',"","","",1,"S",1,2 );
+addEntryDE( "","",'_',"","","",3,"",1,1 );
+addEntryDE( "","",' ',"","","",3," ",1,1 );
 
 }
 
