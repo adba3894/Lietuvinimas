@@ -23,7 +23,9 @@ function addEntryPL(KKont2, KKont1, ES, DKont1, DKont2, DKont3, Gim, FonV, PoslR
 
 
 function transkribavimoTaisyklesDE() {
-
+addEntryDE("","T",'Z',"S","C","H",3,"Č",4,1 );//(46 taisykle)
+addEntryDE( "","",'Z',"S","C","H",3,"Č",4,1 );//54 taisykle
+addEntryDE( "","",'S',"C","H","",3,"Š",3,1 );//(39 taisykle)
 
 //A raide 
 addEntryDE( "","",'A',"E","BCDFGHJKLMNPQRSTVWXYZ","BCDFGHJKLMNPQRSTVWXYZ",3,"E",2,1 );//(2 taisykle) - balsis trumpas kai po jo eina dvi priebalses priklausancios tom paciom morfemom
@@ -112,9 +114,9 @@ addEntryDE( "","",'C',"H","S","",3,"CHS",3,1 );//(10 taisykle)
 addEntryDE("","",'C',"AOUPBTDGFVSZJXLMNR","","",3,"K",1,1 );//(7 taisykle)
 addEntryDE("","AOUPBTDKGFVSZJXLMNR",'C',"_","","",3,"K",1,1 );//(7 taisykle)
 addEntryDE( "","",'C',"H","","",3,"CH",2,1 );//(9 taisykle)
-addEntryDE("","",'C',"E","","",3,"C",2,1 );//(7 taisykle)
-addEntryDE("","",'C',"I","","",3,"C",2,1 );//(7 taisykle)
-addEntryDE("","",'C',"Y","","",3,"C",2,1 );//(7 taisykle)
+addEntryDE("","",'C',"E","","",3,"CE",2,1 );//(7 taisykle)
+addEntryDE("","",'C',"I","","",3,"CI",2,1 );//(7 taisykle)
+addEntryDE("","",'C',"Y","","",3,"CY",2,1 );//(7 taisykle)
 addEntryDE( "","",'C',"K","","",3,"K",2,1 );//(8 taisykle)
 addEntryDE( "","",'C',"","","",3,"C",1,1 );//(7 taisykle)
 
@@ -146,6 +148,8 @@ addEntryDE( "","",'G',"G","","",3,"G",2,1 );//(18 taisykle)
 addEntryDE( "","",'G',"H","","",3,"G",3,1 );//(18 taisykle)
 addEntryDE( "","",'G',"K","","",3,"K",2,1 );//(19 taisykle)
 addEntryDE( "","",'G',"","","",3,"G",1,1 );//(18 taisykle)
+
+
 
 //H raide
 addEntryDE( "","_",'H',"IEAUOÄÖÜ","","",3,"H",1,1 );//(20 taisykle) SKIEMENS PRADYIOJE
@@ -201,6 +205,8 @@ addEntryDE( "","",'O',"E","H","",3,"Ė",3,1 );//(31 taisykle)
 addEntryDE( "","",'O',"O","","",3,"O",2,1 );//(29 taisykle)
 addEntryDE( "","",'O',"","","",3,"O",1,1 );//(29 taisykle)
 
+
+
 //Ö raide
 addEntryDE( "","",'Ö',"B","B","",3,"EB",3,1 );//(30 taisykle)
 addEntryDE( "","",'Ö',"C","K","",3,"EK",3,1 );//(30 taisykle)
@@ -253,8 +259,6 @@ addEntryDE( "","",'R',"R","","",3,"R",2,1 );//(37 taisykle)
 addEntryDE( "","",'R',"","","",3,"R",1,1 );//(37 taisykle)
 
 //S Raide
-addEntryDE("","T",'Z',"S","C","H",3,"Č",4,1 );//(46 taisykle)
-addEntryDE( "","",'S',"C","H","",3,"Š",3,1 );//(39 taisykle)
 addEntryDE( "","_",'S',"P","","",3,"ŠP",2,1 );//(40 taisykle)// kaip pritaikyti taisykle tik zodzio pradziai?
 addEntryDE( "","BCDFGHJKLMNPQRSTVWXZ",'S',"P","","",3,"ŠP",2,1 );//(40 taisykle)// kaip pritaikyti taisykle tik zodzio pradziai?
 addEntryDE( "","",'S',"_","","",3,"S",1,1 );//(41 taisykle)
@@ -272,12 +276,20 @@ addEntryDE("","",'T',"Z","","",3,"C",2,1 );//(45 taisykle)
 addEntryDE("","",'T',"I","O","N",3,"CION",4,1 );//(44 taisykle)
 addEntryDE("","",'T',"T","","",3,"T",2,1 );//(43 taisykle)
 addEntryDE("","",'T',"H","","",3,"T",2,1 );//(43 taisykle)
-
 addEntryDE("","",'T',"","","",3,"T",1,1 );//(43 taisykle)
 
+
+
+
 //U,Ü,UE raides
+addEntryDE( "","",'U',"H","","",3,"Ū",2,1 );//(47 taisykle)- kai UE TRUMPAS
+addEntryDE( "","_",'U',"E","H","",3,"Y",3,1 );//50 taisykle
+addEntryDE( "","_",'Ü',"H","","",3,"Y",2,1 );//50 taisykle
+addEntryDE( "","J",'U',"E","H","",3,"Ū",3,1 );//50 taisykle
+addEntryDE( "","J",'Ü',"H","","",3,"Ū",2,1 );//50 taisykle
+addEntryDE( "","",'U',"E","H","",3,"IŪ",3,1 );//50 taisykle
+addEntryDE( "","",'Ü',"H","","",3,"IŪ",2,1 );//50 taisykle
 //TRUMPAS 2 SKILTIS
-addEntryDE( "","",'U',"H","","",3,"",2,1 );//(47 taisykle)- kai UE TRUMPAS
 addEntryDE( "","_",'U',"E","B","B",3,"IB",4,1 );//48 taisykle,
 addEntryDE( "","_",'U',"E","C","K",3,"IKS",4,1 );//48 taisykle,
 addEntryDE( "","_",'U',"E","D","D",3,"ID",4,1 );//48 taisykle,
@@ -413,7 +425,7 @@ addEntryDE( "","",'U',"K","","",3,"ŪK",2,1 );//(47 taisykle)- kai U ilgas
 addEntryDE( "","",'U',"L","","",3,"ŪL",2,1 );//(47 taisykle)- kai U ilgas
 addEntryDE( "","",'U',"M","","",3,"ŪM",2,1 );//(47 taisykle)- kai U ilgas
 addEntryDE( "","",'U',"N","","",3,"ŪN",2,1 );//(47 taisykle)- kai U ilgas
-//addEntryDE( "","",'U',"P","","",3,"ŪP",2,1 );//(47 taisykle)- kai U ilgas
+addEntryDE( "","",'U',"P","","",3,"ŪP",2,1 );//(47 taisykle)- kai U ilgas
 addEntryDE( "","",'U',"R","","",3,"ŪR",2,1 );//(47 taisykle)- kai U ilgas
 addEntryDE( "","",'U',"T","","",3,"ŪT",2,1 );//(47 taisykle)- kai U ilgas
 addEntryDE( "","",'U',"V","","",3,"ŪV",2,1 );//(47 taisykle)- kai U ilgas
@@ -440,7 +452,6 @@ addEntryDE( "","",'Ü',"H","LMNRAEIOUÄÖÜ","",3,"IŪ",3,1 );//48
 addEntryDE( "","",'Ü',"","","",3,"IU",1,1 );//48 taisykle
 addEntryDE( "","",'U',"E","","",3,"IU",2,1 );//48 taisykle
 addEntryDE( "","",'Ü',"","","",3,"IU",1,1 );//48 taisykle
-addEntryDE( "","_",'U',"E","H","",3,"Y",3,1 );//50 taisykle
 addEntryDE( "","",'U',"E","H","",3,"IU",3,1 );//48 taisykle
 
 //V raide
@@ -453,12 +464,13 @@ addEntryDE( "","",'W',"","","",3,"V",1,1 );//52 taisykle
 addEntryDE( "","",'X',"","","",3,"KS",2,1 );//53 taisykle
 
 //Y raide
-//addEntryDE( "","",'Y',"BCDFGHJKLMNRTVZ","","",3,"Y",2,1 );//54 taisykle
-addEntryDE( "","AOUIEÄÖÜ",'Y',"AOUIEÄÖÜ_","","",3,"Y",1,1 );//54 taisykle
-addEntryDE( "","",'Y',"","","",3,"I",1,1 );//54 taisykle
+addEntryDE( "","",'Y',"H","LMNRAEIOUÄÖÜ","",3,"Y",2,1 );//(21 taisykle)- kai I ilgas
+addEntryDE( "","",'Y',"Y","","",3,"Y",2,1 );//(21 taisykle)- kai I ilgas
+addEntryDE( "","BCDFGHJKLMNPRTVZ",'Y',"BCDFGHJKLMPNRTVZ","","",3,"Y",2,1 );//(21 taisykle)- kai I ilgas
+addEntryDE( "","EAEIOUÖÜ",'Y',"EAEIOUÖÜ","","",3,"J",2,1 );//(21 taisykle)- kai I ilgas
+addEntryDE( "","",'Y',"","","",3,"I",1,1 );//(21 taisykle)- kai I ilgas
 
 //Z raide
-addEntryDE( "","",'Z',"S","C","H",3,"Č",4,1 );//54 taisykle
 addEntryDE( "","",'Z',"Z","","",3,"C",2,1 );//54 taisykle
 addEntryDE( "","",'Z',"","","",3,"C",1,1 );//54 taisykle
 
@@ -587,6 +599,7 @@ function transkrDE(eil1, Gim) {
 	{
 		if (TaisyklDE[j].ES != eil[i]) 
 			j += TaisyklDE[j].PoslT;
+
 		else if(  ((TaisyklDE[j].KKont2!="") ? (TaisyklDE[j].KKont2).indexOf(eil[i-2])+1 : 1)  //+1 nes indexOf grazina -1, o kad veiktu operacija && reikia, kad indexOf grazintu 0, jei nerado.
 				&&((TaisyklDE[j].KKont1!="") ? (TaisyklDE[j].KKont1).indexOf(eil[i-1])+1 : 1)
 				&&((TaisyklDE[j].DKont1!="") ? (TaisyklDE[j].DKont1).indexOf(eil[i+1])+1 : 1)
