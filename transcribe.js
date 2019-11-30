@@ -546,10 +546,6 @@ function transkrDE(eil1, Gim) {
 	return setLetterCaseType(letterCaseType, TrEil);
 }
 
-function switchToTransform() {
-	transformDE();
-}
-
 function transformDE() {
 	var textOut = "";
 	var textIn = document.getElementById("tekstasInput").value;
@@ -562,4 +558,60 @@ function transformDE() {
 	}
 	document.getElementById("tekstasOutput").value = textOut;
 }
+
+
+
+function loadFileAsText(){
+  	var fileToLoad = document.getElementById("fileToLoad").files[0];
+  	var fileReader = new FileReader();
+	fileReader.onload = function(fileLoadedEvent){      	
+	var textFromFileLoaded = fileLoadedEvent.target.result;  
+	var outputContent = "";
+	var arr = textFromFileLoaded.split(';');
+	
+	var overall = arr.length-1;
+	var passedNo = 0;
+	var failedNo = 0;
+	var exceptionNo = 0;
+	
+	for(i = 0; i < arr.length-1; i++){
+	var foreignName = arr[i].substr(0, arr[i].indexOf(','));
+	var lithName = arr[i].split(',').pop().split(';')[0];
+	var lithuanizedName = transkrDE(foreignName, document.getElementById("gimine").value);
+	lithuanizedName = lithuanizedName.charAt(0).toUpperCase() + lithuanizedName.slice(1);
+
+	if(pavardesDE.has(foreignName.trim())){
+		lithName = pavardesDE.get(foreignName.trim()) + "; EXCEPTION";
+		exceptionNo = exceptionNo + 1;
+	}
+
+	else if(lithName != lithuanizedName){
+		lithName = lithName + "; FAILED, Algorithms output is: " + lithuanizedName;
+		failedNo = failedNo + 1;
+	}
+
+	else {
+		lithName = lithName + "; PASSED";
+		passedNo = passedNo + 1;
+	}
+
+
+
+	arr[i] = foreignName + "; " + lithName;
+	outputContent = outputContent + arr[i] + "\n"+"---------------------------------------------------------";
+
+	}
+	outputContent = outputContent + "\n" + "PASSED: " +passedNo+ " FAILED: " +failedNo+ " EXCEPTIONS: " +exceptionNo;
+
+	console.log("passedNo=" + passedNo + " failedNo=" + failedNo + " exceptionNo=" + exceptionNo);
+      	document.getElementById("inputList").value = outputContent;
+  };
+
+  fileReader.readAsText(fileToLoad, "UTF-8");
+}
+
+
+
+
+
 

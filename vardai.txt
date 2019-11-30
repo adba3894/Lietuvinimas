@@ -1,0 +1,5 @@
+Aare,Are;
+Brahms,Bramsas;
+Lävitz,Lėvicas;
+Schäffer,Šėferis;
+Schulz,Šulcas;
