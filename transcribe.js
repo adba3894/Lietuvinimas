@@ -578,6 +578,7 @@ function loadFileAsText(){
 	var foreignName = arr[i].substr(0, arr[i].indexOf(','));
 	var lithName = arr[i].split(',').pop().split(';')[0];
 	var lithuanizedName = transkrDE(foreignName, document.getElementById("gimine").value);
+	var percentPasssed=0;
 	lithuanizedName = lithuanizedName.charAt(0).toUpperCase() + lithuanizedName.slice(1);
 
 	if(pavardesDE.has(foreignName.trim())){
@@ -595,13 +596,13 @@ function loadFileAsText(){
 		passedNo = passedNo + 1;
 	}
 
-
+	percentPassed = Math.round(passedNo/(passedNo+failedNo)*100);
 
 	arr[i] = foreignName + "; " + lithName;
-	outputContent = outputContent + arr[i] + "\n"+"---------------------------------------------------------";
+	outputContent = outputContent + arr[i] + "\n"+"------------------------------------------------------------------";
 
 	}
-	outputContent = outputContent + "\n" + "PASSED: " +passedNo+ " FAILED: " +failedNo+ " EXCEPTIONS: " +exceptionNo;
+	outputContent = outputContent + "\n" + "------------------------------------------------------------------"+ "\n"+ "PASSED: " +passedNo+ "\n" +"FAILED: " +failedNo+ "\n" +"EXCEPTIONS: " +exceptionNo+ "\n" +"PERCENTAGE PASSED: " +percentPassed+"%";
 
 	console.log("passedNo=" + passedNo + " failedNo=" + failedNo + " exceptionNo=" + exceptionNo);
       	document.getElementById("inputList").value = outputContent;
