@@ -129,3 +129,10 @@ Oehme,Ėmė;
 Kühne,Kiūnė;
 Zschokke,Čokė;
 Beethoven,Bethovenas;
+Edler,Edleris;
+Friedrich,Frydrichas;
+Thomas,Tomas;
+Schiller,Šileris;
+Mozart,Mocartas;
+
+
