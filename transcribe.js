@@ -477,9 +477,6 @@ function transformDE() {
 		textOut = transkrDE(input, document.getElementById("gimine").value);
 	}
 
-	if(document.getElementById('germanOrigin').checked){
-
-}
 
 	document.getElementById("tekstasOutput").value = textOut;
 
