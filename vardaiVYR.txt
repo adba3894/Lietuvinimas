@@ -46,7 +46,7 @@ Wolfgang,Volfgangas;
 Göggingen,Gegingenas;
 Seghers,Zėgers;
 Elsnigk,Elsnikas;
-Birkholz,Birkholzas;
+Birkholz,Birkholcas;
 Lohengrin,Lohengrynas;
 Seeghers,Zėgers;
 Thälmann,Tėlmanas;

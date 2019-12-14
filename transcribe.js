@@ -127,10 +127,10 @@ addEntryDE( "","",'B',"","","",3,"B",1,1 );//(6 taisykle)
 addEntryDE("","",'C',"H","","",3,"CH",2,1 );//(9 taisykle)
 addEntryDE("","",'C',"AOUPBTDGFVSZJXLMNR","","",3,"K",1,1 );//(7 taisykle)
 addEntryDE("","AOUPBTDKGFVSZJXLMNR",'C',"_","","",3,"K",1,1 );//(7 taisykle)
-addEntryDE( "","",'C',"H","","",3,"CH",2,1 );//(9 taisykle)
-addEntryDE("","",'C',"E","","",3,"CE",2,1 );//(7 taisykle)
-addEntryDE("","",'C',"I","","",3,"CI",2,1 );//(7 taisykle)
-addEntryDE("","",'C',"Y","","",3,"CY",2,1 );//(7 taisykle)
+addEntryDE( "","",'C',"H","","",3,"C",1,1 );//(9 taisykle)
+addEntryDE("","",'C',"E","","",3,"C",1,1 );//(7 taisykle)
+addEntryDE("","",'C',"I","","",3,"C",1,1 );//(7 taisykle)
+addEntryDE("","",'C',"Y","","",3,"C",1,1 );//(7 taisykle)
 addEntryDE( "","",'C',"","","",3,"C",1,1 );//(7 taisykle)
 
 //D raide
@@ -361,7 +361,7 @@ addEntryDE( "","",'X',"","","",3,"KS",1,1 );//53 taisykle
 //Y raide
 addEntryDE( "","",'Y',"H","LMNRAEIOUÄÖÜ","",3,"Y",2,1 );//(21 taisykle)- kai I ilgas
 addEntryDE( "","",'Y',"Y","","",3,"Y",2,1 );//(21 taisykle)- kai I ilgas
-addEntryDE( "","BCDFGHJKMNPRTVZ",'Y',"BCDFGHJKMPNRTVZ","","",3,"Y",2,1 );//(21 taisykle)- kai I ilgas
+addEntryDE( "","BCDFGHJKMNPRTVZ",'Y',"BCDLFGHJKMPNRTVZ","","",3,"Y",1,1 );//(21 taisykle)- kai I ilgas
 addEntryDE( "","EAEIOUÖÜ",'Y',"EAEIOUÖÜ","","",3,"J",2,1 );//(21 taisykle)- kai I ilgas
 addEntryDE( "","",'Y',"_","","",3,"J",1,1 );/////// idejau
 addEntryDE( "","",'Y',"","","",3,"I",1,1 );//(21 taisykle)- kai I ilgas
@@ -371,9 +371,10 @@ addEntryDE( "","",'Z',"Z","","",3,"C",2,1 );//54 taisykle
 addEntryDE( "","",'Z',"","","",3,"C",1,1 );//54 taisykle
 
 //Galunes vyrai
+addEntryDE( "A","S",'_',"","","",1,"",1,2 );
 addEntryDE( "","KWTFNZHDSGPMCX",'_',"","","",1,"AS",1,2 );
 addEntryDE( "AE","Y",'_',"","","",1,"US",1,2 ); // idejau
-addEntryDE( "AYH","R",'_',"","","",1,"AS",1,2 ); //pataisiau
+addEntryDE( "AUYH","R",'_',"","","",1,"AS",1,2 ); //pataisiau
 addEntryDE( "","LR",'_',"","","",1,"IS",1,2 ); //pataisiau
 addEntryDE( "","I",'_',"","","",1,"S",1,2 );
 addEntryDE( "","Y",'_',"","","",1,"US",1,2 ); // idejau
@@ -498,12 +499,6 @@ input = input.replace("oE", "Ö");
 input = input.replace("uE", "Ü");
 return input;
 }
-
-function germanizeOutput(textOut){
-textOut = textOut.replace("V", "F");
-textOut = textOut.replace("v", "f");
-}
-
 
 
 function loadFileAsText(){
