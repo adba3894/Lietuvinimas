@@ -17,7 +17,6 @@ Bräuning,Broiningas;
 Säuritz,Zoiricas;
 Bräuer,Brojeris;
 Lübben,Liubenas;
-Cyprian,Ciprianas;
 Cainsdorf,Kainsdorfas;
 Cremer,Krėmeris;
 Marc,Markas;
