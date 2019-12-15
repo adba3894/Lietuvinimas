@@ -14,7 +14,7 @@ function addEntryDE(KKont2, KKont1, ES, DKont1, DKont2, DKont3, Gim, FonV, PoslR
 //Fonv - raide, i kuria keisti
 //Poslr - per kiek raidiu pasislinkti
 //Poslt - per kiek taisykliu pasislinkti
-
+//http://www.namenforschung.net/dfd/woerterbuch/liste/
 
 function transkribavimoTaisyklesDE() {
 //L raide
@@ -505,16 +505,6 @@ function getLetterCaseType(word){
 	else return 2;
 }
 
-//Kkont2 - kairysis kontekstas, dvi raides i kaire.
-//Kkont1 - viena raide i kaire.
-//Es - einamoji raide
-//Dkont - 1 2 3 raides i deine
-//Gim - gimine vyrika, moterika ar betkuri
-//Fonv - raide, i kuria keisti
-//Poslr - per kiek raidiu pasislinkti
-//Poslt - per kiek taisykliu pasislinkti
-//  TaisyklDE.push({KKont2, KKont1, ES, DKont1, DKont2, DKont3, Gim, FonV, PoslR, PoslT});
-
 function setLetterCaseType(caseType, word){
 	if(caseType == 2) 
 		return word;
@@ -542,9 +532,10 @@ function transkrDE(eil1, Gim) {
 	// Taisykliu paieska
 	while(i < ilg + 1) // buvo eil1.length + 3 //buvo +1
 	{
-		if (TaisyklDE[j].ES != eil[i]) 
-			j += TaisyklDE[j].PoslT;
-		else if(  ((TaisyklDE[j].KKont2!="") ? (TaisyklDE[j].KKont2).indexOf(eil[i-2])+1 : 1)  //+1 nes indexOf grazina -1, o kad veiktu operacija && reikia, kad indexOf grazintu 0, jei nerado.
+		if (TaisyklDE[j].ES != eil[i]) //jeigu deklaruotos taisykle kuri taikoma tam tikrai einamajai raidei - tai jei jos ta einamoji raide lygi iteruojamo zodzio raidziu einamajai raidei
+			j += TaisyklDE[j].PoslT;// pasislenkame per taisykle
+		else if(  
+				((TaisyklDE[j].KKont2!="") ? (TaisyklDE[j].KKont2).indexOf(eil[i-2])+1 : 1)  //+1 nes indexOf grazina -1, o kad veiktu operacija && reikia, kad indexOf grazintu 0, jei nerado.
 				&&((TaisyklDE[j].KKont1!="") ? (TaisyklDE[j].KKont1).indexOf(eil[i-1])+1 : 1)
 				&&((TaisyklDE[j].DKont1!="") ? (TaisyklDE[j].DKont1).indexOf(eil[i+1])+1 : 1)
 				&&((TaisyklDE[j].DKont2!="") ? (TaisyklDE[j].DKont2).indexOf(eil[i+2])+1 : 1)
