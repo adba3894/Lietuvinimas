@@ -409,22 +409,6 @@ addEntryDE( "","",'U',"BCDFGJKLMNPQRSTVWXYZ","BCDFGHJKLMNPQRSTVWXYZ","",3,"U",1,
 addEntryDE( "","",'U',"","","",3,"U",1,1 );//(47 taisykle) kai U trumpas
 addEntryDE( "","",'U',"LMNRAEIOÄÖÜ","","",3,"Ū",1,1 );//(47 taisykle)- kai U ilgas // prekeliau is virsaus
 addEntryDE( "","BCDFGHJKLMNPQRSTVWXYZ",'U',"BCDFGHJKLMNPQRSTVWXYZ","","",3,"Ū",1,1 );//(47 taisykle)- kai U ilgas // prekeliau is virsaus
-addEntryDE( "","",'U',"B","","",3,"Ū",1,1 );//(47 taisykle)- kai U ilgas
-addEntryDE( "","",'U',"C","","",3,"Ū",1,1 );//(47 taisykle)- kai U ilgas
-addEntryDE( "","",'U',"D","","",3,"Ū",1,1 );//(47 taisykle)- kai U ilgas
-addEntryDE( "","",'U',"F","","",3,"Ū",1,1 );//(47 taisykle)- kai U ilgas
-addEntryDE( "","",'U',"G","","",3,"Ū",1,1 );//(47 taisykle)- kai U ilgas
-addEntryDE( "","",'U',"H","","",3,"Ū",1,1 );//(49 taisykle)- kai U ilgas
-addEntryDE( "","",'U',"J","","",3,"Ū",1,1 );//(47 taisykle)- kai U ilgas
-addEntryDE( "","",'U',"K","","",3,"Ū",1,1 );//(47 taisykle)- kai U ilgas
-addEntryDE( "","",'U',"L","","",3,"Ū",1,1 );//(47 taisykle)- kai U ilgas
-addEntryDE( "","",'U',"M","","",3,"Ū",1,1 );//(47 taisykle)- kai U ilgas 
-addEntryDE( "","",'U',"N","","",3,"Ū",1,1 );//(47 taisykle)- kai U ilgas
-addEntryDE( "","",'U',"P","","",3,"Ū",1,1 );//(47 taisykle)- kai U ilgas
-addEntryDE( "","",'U',"R","","",3,"Ū",1,1 );//(47 taisykle)- kai U ilgas
-addEntryDE( "","",'U',"T","","",3,"Ū",1,1 );//(47 taisykle)- kai U ilgas
-addEntryDE( "","",'U',"V","","",3,"Ū",1,1 );//(47 taisykle)- kai U ilgas
-addEntryDE( "","",'U',"Z","","",3,"Ū",1,1 );//(47 taisykle)- kai U ilgas
 addEntryDE( "","",'U',"","","",3,"U",1,1 );//(43 taisykle) kai U trumpas
 addEntryDE( "","_",'U',"E","H","LMNRAEIOUÄÖÜ",3,"Y",3,1 );//48 taisykle,
 addEntryDE( "","_",'U',"E","BCDFGHJKLMNRTVZ","",3,"Y",3,1 );//48 taisykle,
