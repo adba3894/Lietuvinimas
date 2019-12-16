@@ -100,7 +100,7 @@ Kufstein,Kufšteinas;
 Überlingen,Yberlingenas;
 Uebermann,Ybermanas;
 Üchtland,Ichtlandas;
-Jürlich,Jūrlichas;
+Jülich,Jūlichas;
 Jüterbog,Jūterbogas;
 Jünger,Jungeris;
 Grünewald,Griūnevaldas;
