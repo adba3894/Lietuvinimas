@@ -544,7 +544,18 @@ function transformDE() {
 
 
 	document.getElementById("tekstasOutput").value = textOut;
+	console.log(syllableToStress('Frankfurt'));
 
+}
+
+
+function syllableToStress(word) {
+  word = word.toLowerCase();
+  if(word.length <= 3) { return 1; }
+    word = word.replace(/(?:[^laeiouy]es|ed|[^laeiouy]e)$/, '');
+    word = word.replace(/^y/, '');
+    var firstSyll = word.split(word.match(/[aeiouy]{1,2}/g)[0])[0] + word.match(/[aeiouy]{1,2}/g)[0];  
+    return word.match(/[aeiouy]{1,2}/g)[0];
 }
 
 
