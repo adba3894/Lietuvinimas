@@ -2,5 +2,7 @@ var pavardesDE = new Map([
 ["Schulz", "Šulcas"],
 ["Christian", "Kristianas"],
 ["Beethoven", "Bethovenas"],
-["Isar", "Izaras"]
+["Isar", "Izaras"],
+["Charlotte", "Šarlotė"],
+["Mathilde", "Matilda"]
 ]);

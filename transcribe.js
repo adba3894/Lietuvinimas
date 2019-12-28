@@ -1,6 +1,7 @@
 //Gim: 1 - vyr, 2 - mot, 3 - taikyti ir vyr ir mot gimines zodziui
 var TaisyklDE = [];
 
+
 function addEntryDE(KKont2, KKont1, ES, DKont1, DKont2, DKont3, Gim, FonV, PoslR, PoslT) {
   TaisyklDE.push({KKont2, KKont1, ES, DKont1, DKont2, DKont3, Gim, FonV, PoslR, PoslT});
 }
@@ -20,8 +21,10 @@ function transkribavimoTaisyklesDE() {
 //L raide
 addEntryDE( "","",'E',"Y","EAEIOUÖÜ","",3,"EJ",2,1 );//(15 taisykle)
 addEntryDE( "","",'L',"L","U","",3,"LI",2,1 );//(26 taisykle)
+addEntryDE( "L","L",'_',"","","",1,"AS",2,1 );//(26 taisykle)
 addEntryDE( "","",'L',"L","","",3,"L",2,1 );//(26 taisykle)
 addEntryDE( "","",'L',"U","","",3,"LI",1,1 );//(26 taisykle)
+addEntryDE( "","L",'_',"","","",2,"Ė",1,1 );////(26 taisykle)
 addEntryDE( "","",'L',"","","",3,"L",1,1 );////(26 taisykle)
 addEntryDE("","",'T',"Z","S","C",3,"Č",5,1 );//(46 taisykle)
 addEntryDE("","",'T',"S","C","H",3,"Č",4,1 );//(46 taisykle)
@@ -35,15 +38,17 @@ addEntryDE( "","_",'Ü',"H","","",3,"Y",2,1 );//50 taisykle
 addEntryDE( "","",'Ä',"H","","",3,"Ė",2,1 );//(3 taisykle)
 addEntryDE( "","",'A',"E","H","",3,"Ė",3,1 );//(3 taisykle) - paprastas keitimas
 addEntryDE( "","",'C',"K","","",3,"K",2,1 );//(8 taisykle)
-addEntryDE( "","",'C',"H","S","",3,"CHS",3,1 );//(10 taisykle)
+addEntryDE( "","",'C',"H","S","",3,"CHS",3,1 );//(10 ciu ̨ kalboje arba visiškai nekinta, ı ̨ jas ı ̨einataisykle)
 addEntryDE( "","",'D',"T","","",3,"T",2,1 );//(12 taisykle)
 addEntryDE( "","",'E',"H","","",3,"Ė",2,1 );//(14 taisykle)
 addEntryDE( "","",'G',"G","","",3,"G",2,1 );//(18 taisykle)
 addEntryDE( "","",'G',"H","","",3,"G",2,1 );//(18 taisykle)
 addEntryDE( "","",'G',"K","","",3,"K",2,1 );//(19 taisykle)
 addEntryDE( "","",'G',"","","",3,"G",1,1 );//(18 taisykle)
+addEntryDE( "","",'I',"E","_","",2,"IJA",2,1 );//(13 taisykle)- E ilgas kai pries ji eina I
 addEntryDE( "","",'I',"E","","",3,"Y",2,1 );//(22 taisykle)
 addEntryDE( "","",'I',"H","","",3,"Y",2,1 );//(21 taisykle)- kai I ilgas
+addEntryDE( "","_",'J',"H","E","",3,"JĖ",3,1 );//(20 taisykle)
 addEntryDE( "","",'J',"H","","",3,"J",2,1 );//(24 taisykle)
 addEntryDE( "","",'O',"H","AEIO","",3,"O",1,1 );//(31 taisykle) // idejau reik pasitikrinti
 addEntryDE( "","",'O',"H","","_",3,"O",2,1 );//(31 taisykle) // idejau reik pasitikrinti
@@ -53,6 +58,7 @@ addEntryDE( "","",'P',"F","","",3,"PF",2,1 );//(34 taisykle)
 addEntryDE( "","",'P',"H","","",3,"F",2,1 );//(35 taisykle)
 addEntryDE( "","",'Q',"U","","",3,"KV",2,1 );//(36 taisykle)
 addEntryDE( "","",'R',"H","","",3,"R",2,1 );//(37 taisykle)
+addEntryDE( "T","H",'_',"","","",1,"A",2,1 );
 addEntryDE("","",'T',"H","","",3,"T",2,1 );//(43 taisykle)
 addEntryDE("","",'T',"Z","","",3,"C",2,1 );//(43 taisykle)
 addEntryDE( "","",'U',"H","","",3,"Ū",2,1 );//(47 taisykle)- kai UE TRUMPAS
@@ -80,6 +86,7 @@ addEntryDE( "","",'O',"E","P","F",3,"E",2,1 );//(30 taisykle)
 addEntryDE( "","",'O',"E","X","",3,"E",2,1 );//(30 taisykle)
 addEntryDE( "","",'O',"E","H","LMNRAEIOUÖÜ",3,"Ė",3,1 );//(30 taisykle)
 addEntryDE( "","BCDFGHJKLMNPQRSTVWXYZ",'O',"E","BCDFGHJKLMNPQRSTVWXYZ","",3,"Ė",2,1 );//(30 taisykle)
+addEntryDE( "L","L",'_',"","","",1,"Ė",1,2 );	
 
 //A raide
 addEntryDE( "","",'A',"E","BCDFGHJKLMNPQRSTVWXYZ","BCDFGHJKLMNPQRSTVWXYZ",3,"E",2,1 );//(2 taisykle) - balsis trumpas kai po jo eina dvi priebalses priklausancios tom paciom morfemom
@@ -176,14 +183,13 @@ addEntryDE( "","",'C',"","","",3,"C",1,1 );//(7 taisykle)
 //D raide
 addEntryDE( "","",'D',"D","","",3,"D",2,1 );//(11 taisykle)
 addEntryDE( "","",'D',"T","","",3,"T",2,1 );//(12 taisykle)
+addEntryDE( "","D",'_',"","","",2,"Ė",1,1 );//(11 taisykle)
 addEntryDE( "","",'D',"","","",3,"D",1,1 );//(11 taisykle)
 
 //E raide
 addEntryDE( "","",'E',"R","_","",3,"ER",2,1 );// idejau
 addEntryDE( "","",'E',"LN","","",3,"E",1,1 ); // idejau
 addEntryDE( "","",'E',"H","","",3,"Ė",2,1 );//(14 taisykle)
-addEntryDE( "","I",'E',"","","",3,"Y",2,1 );//(13 taisykle)- E ilgas kai pries ji eina I
-
 addEntryDE( "","BCDFGJKLMNPQRSTVWXYZ",'E',"BCDFGJKLMNPQRSTVWXYZ","","",3,"Ė",1,1 );//(13 tais.)- kai E kirciuoto skiemens gale-REIKA KAZKAIP SUGALVOT-JEI SIA TAISYKLE PRITAIKE 1 KARTA,KAD DAUGIAU NEBETAIKYTU
 addEntryDE( "","",'E',"I","BCDFGHJKLMNPRTVZ","",3,"EI",2,1 );//(15 taisykle)
 addEntryDE( "","",'E',"Y","BCDFGHJKLMNPRTVZ","",3,"EI",2,1 );//(15 taisykle)
@@ -193,6 +199,7 @@ addEntryDE( "","",'E',"U","BCDFGHJKLMNPRTVZ","",3,"OI",2,1 );//(16 taisykle)
 addEntryDE( "","",'E',"U","","",3,"OJ",2,1 );//(16 taisykle)
 addEntryDE( "","",'E',"E","","",3,"E",2,1 );//(16 taisykle)
 addEntryDE( "","",'E',"R","_","",3,"ER",2,1 );// idejau
+addEntryDE( "","",'E',"A","_","",2,"ĖJ",1,1 );
 addEntryDE( "","",'E',"_","","",3,"Ė",1,1 );
 addEntryDE( "","",'E',"","","",3,"E",1,1 );//(14 taisykle)
 
@@ -239,6 +246,7 @@ addEntryDE( "","",'O',"I","EAEIOUÖÜ","",3,"OJ",2,1 );//(32 taisykle)
 addEntryDE( "","",'O',"Y","EAEIOUÖÜ","",3,"OJ",2,1 );//(32 taisykle)
 
 //O raide
+addEntryDE( "","",'O',"_","","",1,"AS",1,2 );
 addEntryDE( "","",'O',"O","","",3,"O",2,1 );//(29 taisykle)
 addEntryDE( "","",'O',"","","",3,"O",1,1 );//(29 taisykle)
 
@@ -444,16 +452,16 @@ addEntryDE( "","",'Y',"","","",3,"I",1,1 );//(21 taisykle)- kai I ilgas
 addEntryDE( "","",'Z',"Z","","",3,"C",2,1 );//54 taisykle
 addEntryDE( "","",'Z',"","","",3,"C",1,1 );//54 taisykle
 
-//Galunes vyrai
+//Galunes
+
 addEntryDE( "A","S",'_',"","","",1,"",1,2 );
-addEntryDE( "","KWTFNZHDSGPMCX",'_',"","","",1,"AS",1,2 );
+addEntryDE( "","KWTFBNZHDSGVPMCX",'_',"","","",1,"AS",1,2 );
 addEntryDE( "AE","Y",'_',"","","",1,"US",1,2 ); // idejau
 addEntryDE( "AUYH","R",'_',"","","",1,"AS",1,2 ); //pataisiau
+addEntryDE( "R","L",'_',"","","",1,"AS",1,2 ); //pataisiau
 addEntryDE( "","LR",'_',"","","",1,"IS",1,2 ); //pataisiau
 addEntryDE( "","I",'_',"","","",1,"S",1,2 );
 addEntryDE( "","Y",'_',"","","",1,"US",1,2 ); // idejau
-//Galune moterys
-//Galunes 
 addEntryDE( "","",'_',"","","",3,"",1,1 );
 addEntryDE( "","",' ',"","","",3," ",1,1 );
 }
@@ -486,7 +494,7 @@ function setLetterCaseType(caseType, word){
 		return word.charAt(0) + word.slice(1).toLowerCase();
 	else return word.toLowerCase();
 }
-
+//jeigu iteruojamoji raide yra kazkokia balse tarkim (e,ae,ue,u,oe,i) ir po jos eina priebalse, tada ta balse praprocesinam per taisykles, o sekanciom balsem nebetaikom tam tikru taisykliu
 function transkrDE(eil1, Gim) {
 	var TrEil = "";
 	var i=0, j=0, ilg = 0;
@@ -533,6 +541,7 @@ function transkrDE(eil1, Gim) {
 function transformDE() {
 	var textOut = "";
 	var textIn = document.getElementById("tekstasInput").value;
+	var syllOfTextIn = syllableToStress(document.getElementById("tekstasInput").value);
 
 	var input = document.getElementById("tekstasInput").value;
 	console.log("input=" + input);
@@ -544,7 +553,7 @@ function transformDE() {
 
 
 	document.getElementById("tekstasOutput").value = textOut;
-	console.log(syllableToStress('Frankfurt'));
+	console.log(syllOfTextIn);
 
 }
 
@@ -555,7 +564,7 @@ function syllableToStress(word) {
     word = word.replace(/(?:[^laeiouy]es|ed|[^laeiouy]e)$/, '');
     word = word.replace(/^y/, '');
     var firstSyll = word.split(word.match(/[aeiouy]{1,2}/g)[0])[0] + word.match(/[aeiouy]{1,2}/g)[0];  
-    return word.match(/[aeiouy]{1,2}/g)[0];
+    return firstSyll;
 }
 
 
@@ -566,8 +575,6 @@ function loadFileAsText(){
 	var textFromFileLoaded = fileLoadedEvent.target.result;  
 	var outputContent = "";
 	var arr = textFromFileLoaded.split(';');
-	
-	var overall = arr.length-1;
 	var passedNo = 0;
 	var failedNo = 0;
 	var exceptionNo = 0;
@@ -599,10 +606,10 @@ function loadFileAsText(){
 	percentPassed = Math.round(passedNo/(passedNo+failedNo)*100);
 
 	arr[i] = "\n" + foreignName + "; " + lithName;
-	outputContent = outputContent + arr[i] + "\n"+"------------------------------------------------------------------";
+	outputContent = outputContent + arr[i] + "\n"+"___________________________________________________________________";
 
 	}
-	outputContent = outputContent + "\n" + "------------------------------------------------------------------"+ "\n"+ "PASSED: " +passedNo+ "\n" +"FAILED: " +failedNo+ "\n" +"EXCEPTIONS: " +exceptionNo+ "\n" +"PERCENTAGE PASSED: " +percentPassed+"%";
+	outputContent = outputContent + "\n" + "________________________________________________________________________"+ "\n"+ "PASSED: " +passedNo+ "\n" +"FAILED: " +failedNo+ "\n" +"EXCEPTIONS: " +exceptionNo+ "\n" +"PERCENTAGE PASSED: " +percentPassed+"%";
       	document.getElementById("inputList").value = outputContent;
   };
 
