@@ -21,7 +21,7 @@ function transkribavimoTaisyklesDE() {
 //L raide
 addEntryDE( "","",'E',"Y","EAEIOUÖÜ","",3,"EJ",2,1 );//(15 taisykle)
 addEntryDE( "","",'L',"L","U","",3,"LI",2,1 );//(26 taisykle)
-addEntryDE( "L","L",'_',"","","",1,"AS",2,1 );//(26 taisykle)
+addEntryDE( "L","L",'_',"","","",1,"AS",2,1 );//(26 taisykle)TrEil
 addEntryDE( "","",'L',"L","","",3,"L",2,1 );//(26 taisykle)
 addEntryDE( "","",'L',"U","","",3,"LI",1,1 );//(26 taisykle)
 addEntryDE( "","L",'_',"","","",2,"Ė",1,1 );////(26 taisykle)
@@ -34,6 +34,7 @@ addEntryDE( "","Z",'S',"C","H","",3,"Č",3,1 ); //idejau
 addEntryDE( "","",'S',"C","H","",3,"Š",3,1 );//(39 taisykle)
 addEntryDE( "","_",'S',"P","","",3,"ŠP",2,1 );//(40 taisykle)
 addEntryDE( "","_",'S',"T","","",3,"ŠT",2,1 );//(42 taisykle)
+addEntryDE( "","",'S',"T","_","",3,"ST",2,1 );//(42 taisykle)
 addEntryDE( "","_",'Ü',"H","","",3,"Y",2,1 );//50 taisykle
 addEntryDE( "","",'Ä',"H","","",3,"Ė",2,1 );//(3 taisykle)
 addEntryDE( "","",'A',"E","H","",3,"Ė",3,1 );//(3 taisykle) - paprastas keitimas
@@ -494,10 +495,10 @@ function setLetterCaseType(caseType, word){
 		return word.charAt(0) + word.slice(1).toLowerCase();
 	else return word.toLowerCase();
 }
-//jeigu iteruojamoji raide yra kazkokia balse tarkim (e,ae,ue,u,oe,i) ir po jos eina priebalse, tada ta balse praprocesinam per taisykles, o sekanciom balsem nebetaikom tam tikru taisykliu
+
 function transkrDE(eil1, Gim) {
 	var TrEil = "";
-	var i=0, j=0, ilg = 0;
+	var i=0, j=0, ilg = 0, rulesChecked = 0;
 	var eil = "";
 	var letterCaseType = 0; // 0 - zodyje visos raides mazosios, 1 - pirma raide didzioji, kitos mazosios, 2 - visos didziosios raides
 
@@ -510,6 +511,7 @@ function transkrDE(eil1, Gim) {
 	TrEil = ""; //TrEil = "0";
 	i = 2;
 	j = 0;
+	rulesChecked = 0;
 	
 	// Taisykliu paieska
 	while(i < ilg + 1) // buvo eil1.length + 3 //buvo +1
@@ -525,9 +527,9 @@ function transkrDE(eil1, Gim) {
 				&&(TaisyklDE[j].Gim & Gim))
 		{
 
-
 		console.log("Kkont2=" + TaisyklDE[j].KKont2 + " Kkont1=" + TaisyklDE[j].KKont1 + " Es=" + TaisyklDE[j].ES + " Dkont1=" +TaisyklDE[j].DKont1 +" Dkont2=" + TaisyklDE[j].DKont2 +" Dkont3=" + 			TaisyklDE[j].DKont3 +" Gim=" + TaisyklDE[j].Gim +" Fonv=" + TaisyklDE[j].FonV +" Poslr=" + TaisyklDE[j].PoslR +" Poslt=" + TaisyklDE[j].PoslT);
 
+			rulesChecked = rulesChecked +1;
 			i += TaisyklDE[j].PoslR;
 			TrEil = TrEil.concat(TaisyklDE[j].FonV);
 			j = 0; //new 2018 11 22
@@ -541,7 +543,7 @@ function transkrDE(eil1, Gim) {
 function transformDE() {
 	var textOut = "";
 	var textIn = document.getElementById("tekstasInput").value;
-	var syllOfTextIn = syllableToStress(document.getElementById("tekstasInput").value);
+	//var syllOfTextIn = syllableToStress(document.getElementById("tekstasInput").value);
 
 	var input = document.getElementById("tekstasInput").value;
 	console.log("input=" + input);
@@ -553,7 +555,7 @@ function transformDE() {
 
 
 	document.getElementById("tekstasOutput").value = textOut;
-	console.log(syllOfTextIn);
+	//console.log(syllOfTextIn);
 
 }
 
