@@ -145,7 +145,7 @@ Gunthar,Guntaras;
 Gustav,Gustavas;
 Haribald,Haribaldas;
 Hauke,Haukė;
-Haimo,Haimo;
+Haimo,Haimas;
 Helmut,Helmutas;
 Irmin,Irminas;
 Tristan,Tristanas;
@@ -159,9 +159,10 @@ Otto,Otas;
 Ralf,Ralfas;
 Rainer,Raineris;
 Raimund,Raimundas;
-Rune,Runė;
 Sungard,Zungardas;
 Theobald,Teobaldas;
 Till,Tilas;
 Walbert,Valbertas;
+Brauchitsch,Brauchičas;
+
 

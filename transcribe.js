@@ -467,6 +467,11 @@ addEntryDE( "","",'_',"","","",3,"",1,1 );
 addEntryDE( "","",' ',"","","",3," ",1,1 );
 }
 
+function kirciavimoTaisyklesDE() {
+//L raide
+addEntryDE( "","",'E',"Y","EAEIOUÖÜ","",3,"EJ",2,1 );//(15 taisykle)
+addEntryDE( "","",'L',"L","U","",3,"LI",2,1 );//(26 taisykle)
+}
 
 window.onload = function(e){ 
 	transkribavimoTaisyklesDE();	
@@ -498,7 +503,7 @@ function setLetterCaseType(caseType, word){
 
 function transkrDE(eil1, Gim) {
 	var TrEil = "";
-	var i=0, j=0, ilg = 0, rulesChecked = 0;
+	var i=0, j=0, ilg = 0;
 	var eil = "";
 	var letterCaseType = 0; // 0 - zodyje visos raides mazosios, 1 - pirma raide didzioji, kitos mazosios, 2 - visos didziosios raides
 
@@ -511,8 +516,9 @@ function transkrDE(eil1, Gim) {
 	TrEil = ""; //TrEil = "0";
 	i = 2;
 	j = 0;
-	rulesChecked = 0;
+	console.log("ilg: " + ilg);
 	
+
 	// Taisykliu paieska
 	while(i < ilg + 1) // buvo eil1.length + 3 //buvo +1
 	{
@@ -529,13 +535,14 @@ function transkrDE(eil1, Gim) {
 
 		console.log("Kkont2=" + TaisyklDE[j].KKont2 + " Kkont1=" + TaisyklDE[j].KKont1 + " Es=" + TaisyklDE[j].ES + " Dkont1=" +TaisyklDE[j].DKont1 +" Dkont2=" + TaisyklDE[j].DKont2 +" Dkont3=" + 			TaisyklDE[j].DKont3 +" Gim=" + TaisyklDE[j].Gim +" Fonv=" + TaisyklDE[j].FonV +" Poslr=" + TaisyklDE[j].PoslR +" Poslt=" + TaisyklDE[j].PoslT);
 
-			rulesChecked = rulesChecked +1;
 			i += TaisyklDE[j].PoslR;
 			TrEil = TrEil.concat(TaisyklDE[j].FonV);
 			j = 0; //new 2018 11 22
 		}
 		else j++;
-		if (j > TaisyklDE.length - 1) { j = 0; i++; }
+		if (j > TaisyklDE.length - 1) {
+		 j = 0; i++; 
+		}
 	}
 	return setLetterCaseType(letterCaseType, TrEil);
 }
@@ -543,22 +550,19 @@ function transkrDE(eil1, Gim) {
 function transformDE() {
 	var textOut = "";
 	var textIn = document.getElementById("tekstasInput").value;
-	//var syllOfTextIn = syllableToStress(document.getElementById("tekstasInput").value);
+	var sex = document.getElementById("gimine").value;
 
 	var input = document.getElementById("tekstasInput").value;
 	console.log("input=" + input);
 	if(pavardesDE.has(textIn)) {
 		textOut = pavardesDE.get(textIn);
 	} else {
-		textOut = transkrDE(input, document.getElementById("gimine").value);
+		textOut = transkrDE(input, sex);
 	}
 
 
 	document.getElementById("tekstasOutput").value = textOut;
-	//console.log(syllOfTextIn);
-
 }
-
 
 function syllableToStress(word) {
   word = word.toLowerCase();
