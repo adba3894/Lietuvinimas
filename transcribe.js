@@ -198,7 +198,7 @@ addEntryDE( "","",'E',"I","EAEIOUÖÜ","",3,"EJ",2,1 );//(15 taisykle)
 addEntryDE( "","",'E',"Y","EAEIOUÖÜ","",3,"EJ",2,1 );//(15 taisykle)
 addEntryDE( "","",'E',"U","BCDFGHJKLMNPRTVZ","",3,"OI",2,1 );//(16 taisykle)
 addEntryDE( "","",'E',"U","","",3,"OJ",2,1 );//(16 taisykle)
-addEntryDE( "","",'E',"E","","",3,"E",2,1 );//(16 taisykle)
+addEntryDE( "","",'E',"E","","",3,"Ė",2,1 );//(16 taisykle)
 addEntryDE( "","",'E',"R","_","",3,"ER",2,1 );// idejau
 addEntryDE( "","",'E',"A","_","",2,"ĖJ",1,1 );
 addEntryDE( "","",'E',"_","","",3,"Ė",1,1 );
@@ -467,12 +467,6 @@ addEntryDE( "","",'_',"","","",3,"",1,1 );
 addEntryDE( "","",' ',"","","",3," ",1,1 );
 }
 
-function kirciavimoTaisyklesDE() {
-//L raide
-addEntryDE( "","",'E',"Y","EAEIOUÖÜ","",3,"EJ",2,1 );//(15 taisykle)
-addEntryDE( "","",'L',"L","U","",3,"LI",2,1 );//(26 taisykle)
-}
-
 window.onload = function(e){ 
 	transkribavimoTaisyklesDE();	
 	console.log("TaisyklDE.length=" + TaisyklDE.length);
@@ -506,17 +500,17 @@ function transkrDE(eil1, Gim) {
 	var i=0, j=0, ilg = 0;
 	var eil = "";
 	var letterCaseType = 0; // 0 - zodyje visos raides mazosios, 1 - pirma raide didzioji, kitos mazosios, 2 - visos didziosios raides
-
+	var firstSyll = "";
+	var middleName = "";
+	var nameEnding = "";
+	var transcribedName = "";
 	letterCaseType = getLetterCaseType(eil1);
-
 	eil = "__" + eil1.toUpperCase(); //eil = eil1_.split("");	// is stringo eil1 padarome masyva eil
 	ilg = eil.length;
 	eil = eil + "____0"; 
-	
 	TrEil = ""; //TrEil = "0";
 	i = 2;
 	j = 0;
-	console.log("ilg: " + ilg);
 	
 
 	// Taisykliu paieska
@@ -535,17 +529,38 @@ function transkrDE(eil1, Gim) {
 
 		console.log("Kkont2=" + TaisyklDE[j].KKont2 + " Kkont1=" + TaisyklDE[j].KKont1 + " Es=" + TaisyklDE[j].ES + " Dkont1=" +TaisyklDE[j].DKont1 +" Dkont2=" + TaisyklDE[j].DKont2 +" Dkont3=" + 			TaisyklDE[j].DKont3 +" Gim=" + TaisyklDE[j].Gim +" Fonv=" + TaisyklDE[j].FonV +" Poslr=" + TaisyklDE[j].PoslR +" Poslt=" + TaisyklDE[j].PoslT);
 
-			i += TaisyklDE[j].PoslR;
-			TrEil = TrEil.concat(TaisyklDE[j].FonV);
-			j = 0; //new 2018 11 22
+
+		
+		i += TaisyklDE[j].PoslR;
+		TrEil = TrEil.concat(TaisyklDE[j].FonV);
+		j = 0; //new 2018 11 22
+		
+
+
 		}
 		else j++;
 		if (j > TaisyklDE.length - 1) {
 		 j = 0; i++; 
 		}
 	}
+		
+
+	firstSyll = syllableToStress(TrEil).toUpperCase();
+	middleName = (delithuanizeName((TrEil.replace(firstSyll,"")).toUpperCase())).slice(0,-1);
+	nameEnding = (TrEil.substring(TrEil.length - 1)).toUpperCase();
+	TrEil = firstSyll + middleName + nameEnding;
 	return setLetterCaseType(letterCaseType, TrEil);
 }
+
+function delithuanizeName(name){
+name = name.replace(/Ū/g, "U");
+name = name.replace(/Ė/g, "E");
+name = name.replace(/ū/g, "u");
+name = name.replace(/ė/g, "e");
+return name;
+}
+
+
 
 function transformDE() {
 	var textOut = "";
@@ -565,11 +580,7 @@ function transformDE() {
 }
 
 function syllableToStress(word) {
-  word = word.toLowerCase();
-  if(word.length <= 3) { return 1; }
-    word = word.replace(/(?:[^laeiouy]es|ed|[^laeiouy]e)$/, '');
-    word = word.replace(/^y/, '');
-    var firstSyll = word.split(word.match(/[aeiouy]{1,2}/g)[0])[0] + word.match(/[aeiouy]{1,2}/g)[0];  
+    var firstSyll = word.split(word.match(/[aeiouyėū]{1,2}/g)[0])[0] + word.match(/[aeiouyėū]{1,2}/g)[0];  
     return firstSyll;
 }
 
