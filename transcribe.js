@@ -1,6 +1,8 @@
 //Gim: 1 - vyr, 2 - mot, 3 - taikyti ir vyr ir mot gimines zodziui
 var TaisyklDE = [];
-
+var exceptionEndings = [
+  ["ĖJUS", "EJUS"]
+];
 
 function addEntryDE(KKont2, KKont1, ES, DKont1, DKont2, DKont3, Gim, FonV, PoslR, PoslT) {
     TaisyklDE.push({
@@ -27,6 +29,7 @@ function addEntryDE(KKont2, KKont1, ES, DKont1, DKont2, DKont3, Gim, FonV, PoslR
 //Poslr - per kiek raidiu pasislinkti
 //Poslt - per kiek taisykliu pasislinkti
 //http://www.namenforschung.net/dfd/woerterbuch/liste/
+//https://html-cleaner.com/js/
 
 function transkribavimoTaisyklesDE() {
     //L raide
@@ -47,6 +50,7 @@ function transkribavimoTaisyklesDE() {
     addEntryDE("", "_", 'S', "T", "", "", 3, "ŠT", 2, 1); //(42 taisykle)
     addEntryDE("", "", 'S', "T", "_", "", 3, "ST", 2, 1); //(42 taisykle)
     addEntryDE("", "_", 'Ü', "H", "", "", 3, "Y", 2, 1); //50 taisykle
+    addEntryDE("", "", 'H', "Ä", "", "", 3, "Ė", 2, 1); //(3 taisykle)
     addEntryDE("", "", 'Ä', "H", "", "", 3, "Ė", 2, 1); //(3 taisykle)
     addEntryDE("", "", 'A', "E", "H", "", 3, "Ė", 3, 1); //(3 taisykle) - paprastas keitimas
     addEntryDE("", "", 'C', "K", "", "", 3, "K", 2, 1); //(8 taisykle)
@@ -71,6 +75,7 @@ function transkribavimoTaisyklesDE() {
     addEntryDE("", "", 'Q', "U", "", "", 3, "KV", 2, 1); //(36 taisykle)
     addEntryDE("", "", 'R', "H", "", "", 3, "R", 2, 1); //(37 taisykle)
     addEntryDE("T", "H", '_', "", "", "", 1, "A", 2, 1);
+    addEntryDE("", "", 'T', "H", "Ä", "", 3, "TĖ", 3, 1); //(43 taisykle)
     addEntryDE("", "", 'T', "H", "", "", 3, "T", 2, 1); //(43 taisykle)
     addEntryDE("", "", 'T', "Z", "", "", 3, "C", 2, 1); //(43 taisykle)
     addEntryDE("", "", 'U', "H", "", "", 3, "Ū", 2, 1); //(47 taisykle)- kai UE TRUMPAS
@@ -436,10 +441,11 @@ function transkribavimoTaisyklesDE() {
     addEntryDE("", "", 'U', "T", "Z", "", 3, "U", 1, 1); //(47 taisykle)- kai U trumpas
     addEntryDE("", "", 'U', "P", "F", "", 3, "U", 1, 1); //(47 taisykle)- kai U trumpas
     addEntryDE("", "", 'U', "X", "", "", 3, "U", 1, 1); //(47 taisykle)- kai U trumpas
-    addEntryDE("", "", 'U', "BCDFGJKLMNPQRSTVWXYZ", "BCDFGHJKLMNPQRSTVWXYZ", "", 3, "U", 1, 1);
-    addEntryDE("", "", 'U', "H", "LMNRAEIOÄÖÜ", "", 3, "Ū", 2, 1); //(47 taisykle)- kai U ilgas // prekeliau is virsaus
-    addEntryDE("", "BCDFGHJKLMNPQRSTVWXYZ", 'U', "BCDFGHJKLMNPQRSTVWXYZ", "", "", 3, "Ū", 1, 1);
-    addEntryDE("", "", 'U', "", "", "", 3, "U", 1, 1); //(47 taisykle) kai U trumpas
+
+    addEntryDE( "","",'U',"BCDFGJKLMNPQRSTVWXYZ","BCDFGHJKLMNPQRSTVWXYZ","",3,"U",1,1 );
+    addEntryDE( "","",'U',"H","LMNRAEIOÄÖÜ","",3,"Ū",2,1 );//(47 taisykle)- kai U ilgas // prekeliau is virsaus
+    addEntryDE( "","BCDFGHJKLMNPQRSTVWXYZ",'U',"BCDFGHJKLMNPQRSTVWXYZ","","",3,"Ū",1,1 );
+    addEntryDE( "","",'U',"","","",3,"U",1,1 );//(47 taisykle) kai U trumpas
 
     //V raide
     addEntryDE("", "_", 'V', "IOE", "", "", 3, "F", 1, 1); //idejau
@@ -513,9 +519,6 @@ function transkrDE(eil1, Gim) {
         ilg = 0;
     var eil = "";
     var letterCaseType = 0; // 0 - zodyje visos raides mazosios, 1 - pirma raide didzioji, kitos mazosios, 2 - visos didziosios raides
-    var firstSyll = "";
-    var middleName = "";
-    var nameEnding = "";
     var transcribedName = "";
     letterCaseType = getLetterCaseType(eil1);
     eil = "__" + eil1.toUpperCase(); //eil = eil1_.split("");	// is stringo eil1 padarome masyva eil
@@ -524,7 +527,6 @@ function transkrDE(eil1, Gim) {
     TrEil = ""; //TrEil = "0";
     i = 2;
     j = 0;
-
 
     // Taisykliu paieska
     while (i < ilg + 1) // buvo eil1.length + 3 //buvo +1
@@ -557,23 +559,39 @@ function transkrDE(eil1, Gim) {
         }
     }
 
+    TrEil = stressName(TrEil);
+    console.log("TrEil :" +TrEil);
+    return setLetterCaseType(letterCaseType, TrEil);
+}
 
+function delithuanizeName(namePart) {
+    namePart = namePart.replace(/Ū/g, "U");
+    namePart = namePart.replace(/Ė/g, "E");
+    namePart = namePart.replace(/ū/g, "u");
+    namePart = namePart.replace(/ė/g, "e");
+    return namePart;
+}
+
+
+function stressName(TrEil){
+    var i = 0;
     firstSyll = (syllableToStress(TrEil)).toUpperCase();
     middleName = (delithuanizeName((TrEil.replace(firstSyll, "")).toUpperCase())).slice(0, -1);
     nameEnding = (TrEil.substring(TrEil.length - 1)).toUpperCase();
     TrEil = firstSyll + middleName + nameEnding;
-    return setLetterCaseType(letterCaseType, TrEil);
+
+    console.log("firstSyll :" +firstSyll);
+    console.log("middleName :" +middleName);
+    console.log("nameEnding :" +nameEnding);
+
+    for(i = 0; i < exceptionEndings.length; i++){
+	if(TrEil.includes(exceptionEndings[i][i+1])){
+		TrEil = TrEil.replace(exceptionEndings[i][i+1], exceptionEndings[i][i]);
+		break;
+	}
+    }
+    return TrEil;
 }
-
-function delithuanizeName(name) {
-    name = name.replace(/Ū/g, "U");
-    name = name.replace(/Ė/g, "E");
-    name = name.replace(/ū/g, "u");
-    name = name.replace(/ė/g, "e");
-    return name;
-}
-
-
 
 function transformDE() {
     var textOut = "";
@@ -593,6 +611,16 @@ function transformDE() {
 
 
     document.getElementById("tekstasOutput").value = textOut;
+}
+
+function optimizeInput(textIn){
+textIn = textIn.replace(/ae/g,"ä");
+textIn = textIn.replace(/ue/g,"ü");
+textIn = textIn.replace(/oe/g,"ö");
+textIn = textIn.replace(/AE/g,"Ä");
+textIn = textIn.replace(/UE/g,"Ü");
+textIn = textIn.replace(/OE/g,"Ö");
+return textIn;
 }
 
 
