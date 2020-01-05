@@ -639,6 +639,7 @@ function syllableToStress(word) {
 
 
 function loadFileAsText() {
+    var startTime = performance.now();
     var fileToLoad = document.getElementById("fileToLoad").files[0];
     var fileReader = new FileReader();
     fileReader.onload = function(fileLoadedEvent) {
@@ -675,7 +676,8 @@ function loadFileAsText() {
             outputContent = outputContent + arr[i] + "\n" + "___________________________________________________________________";
 
         }
-        outputContent = outputContent + "\n" + "________________________________________________________________________" + "\n" + "PASSED: " + passedNo + "\n" + "FAILED: " + failedNo + "\n" + "EXCEPTIONS: " + exceptionNo + "\n" + "PERCENTAGE PASSED: " + percentPassed + "%";
+	var endTime = performance.now();
+        outputContent = outputContent + "\n" + "________________________________________________________________________" + "\n" + "PASSED: " + passedNo + "\n" + "FAILED: " + failedNo + "\n" + "EXCEPTIONS: " + exceptionNo + "\n" + "PERCENTAGE PASSED: " + percentPassed + "%" + "\n" + "PROCESSING TIME: " + (endTime - startTime)/100 + "s";
         document.getElementById("inputList").value = outputContent;
     };
 
