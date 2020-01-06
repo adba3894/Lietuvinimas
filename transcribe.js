@@ -18,18 +18,6 @@ function addEntryDE(KKont2, KKont1, ES, DKont1, DKont2, DKont3, Gim, FonV, PoslR
     });
 }
 
-//https://www.mii.lt/informatica/pdf/INFO183.pdf
-//Kkont2 - kairysis kontekstas, dvi raides i kaire.
-//Kkont1 - viena raide i kaire.
-//Es - einamoji raide
-//Dkont - 1 2 3 raides i deine
-//Gim - gimine vyrika, moterika ar betkuri
-//Fonv - raide, i kuria keisti
-//Poslr - per kiek raidiu pasislinkti
-//Poslt - per kiek taisykliu pasislinkti
-//http://www.namenforschung.net/dfd/woerterbuch/liste/
-//https://html-cleaner.com/js/
-
 function transkribavimoTaisyklesDE() {
     addEntryDE("", "", 'E', "Y", "EAEIOUÖÜ", "", 3, "EJ", 2, 1); 
     addEntryDE("", "", 'L', "L", "U", "", 3, "LI", 2, 1); 
@@ -73,7 +61,7 @@ function transkribavimoTaisyklesDE() {
     addEntryDE("", "", 'P', "H", "", "", 3, "F", 2, 1); 
     addEntryDE("", "", 'Q', "U", "", "", 3, "KV", 2, 1); 
     addEntryDE("", "", 'R', "H", "", "", 3, "R", 2, 1); 
-    addEntryDE("T", "H", '_', "", "", "", 1, "A", 2, 1);
+    addEntryDE("T", "H", '_', "", "", "", 1, "AS", 2, 1);
     addEntryDE("", "", 'T', "T", "H", "", 3, "T", 3, 1); 
     addEntryDE("", "", 'T', "H", "Ä", "", 3, "TĖ", 3, 1); 
     addEntryDE("", "", 'T', "H", "", "", 3, "T", 2, 1); 
@@ -402,7 +390,7 @@ function transkribavimoTaisyklesDE() {
     addEntryDE("", "BCDFGHJKMNPRTVZ", 'Y', "BCDLFGHJKMPNRTVZ", "", "", 3, "Y", 1, 3); 
     addEntryDE("", "EAEIOUÖÜ", 'Y', "EAEIOUÖÜ", "", "", 3, "J", 2, 2); 
     addEntryDE("", "", 'Y', "_", "", "", 3, "J", 1, 1); 
-    addEntryDE("", "", 'Y', "Ü", "", "", 3, "JŪ", 2, 1); 
+    addEntryDE("", "", 'Y', "Ü", "", "", 3, "JŪ", 2, 1);
     addEntryDE("", "", 'Y', "", "", "", 3, "I", 1, 1); 
     addEntryDE("", "", 'Z', "Z", "", "", 3, "C", 2, 1); 
     addEntryDE("", "", 'Z', "", "", "", 3, "C", 1, 1); 
@@ -444,8 +432,28 @@ function setLetterCaseType(caseType, word) {
     else return word.toLowerCase();
 }
 
+function germanizeInput(word){
+word = word.replace(/UE/g,"Ü");
+word = word.replace(/AE/g,"Ä");
+word = word.replace(/OE/g,"Ö");
+return word;
+}
+
+//https://www.mii.lt/informatica/pdf/INFO183.pdf
+//Kkont2 - kairysis kontekstas, dvi raides i kaire.
+//Kkont1 - viena raide i kaire.
+//Es - einamoji raide
+//Dkont - 1 2 3 raides i deine
+//Gim - gimine vyrika, moterika ar betkuri
+//Fonv - raide, i kuria keisti
+//Poslr - per kiek raidiu pasislinkti
+//Poslt - per kiek taisykliu pasislinkti
+//http://www.namenforschung.net/dfd/woerterbuch/liste/
+//https://html-cleaner.com/js/
+
+
 function transkrDE(eil1, Gim) {
-    var TrEil = "";
+    var output = "";
     var i = 0,
         j = 0,
         ilg = 0;
@@ -456,14 +464,14 @@ function transkrDE(eil1, Gim) {
     eil = "__" + eil1.toUpperCase(); 
     ilg = eil.length;
     eil = eil + "____0";
-    TrEil = ""; 
     i = 2;
     j = 0;
-
+//    eil = germanizeInput();
     while (i < ilg + 1) 
     {
-        if (TaisyklDE[j].ES != eil[i]) 
+        if (TaisyklDE[j].ES != eil[i]){
             j += TaisyklDE[j].PoslT; 
+}
         else if (
             ((TaisyklDE[j].KKont2 != "") ? (TaisyklDE[j].KKont2).indexOf(eil[i - 2]) + 1 : 1) 
             &&
@@ -476,11 +484,25 @@ function transkrDE(eil1, Gim) {
             console.log("Kkont2=" + TaisyklDE[j].KKont2 + " Kkont1=" + TaisyklDE[j].KKont1 + " Es=" + TaisyklDE[j].ES + " Dkont1=" + TaisyklDE[j].DKont1 + " Dkont2=" + TaisyklDE[j].DKont2 + " Dkont3=" + TaisyklDE[j].DKont3 + " Gim=" + TaisyklDE[j].Gim + " Fonv=" + TaisyklDE[j].FonV + " Poslr=" + TaisyklDE[j].PoslR + " Poslt=" + TaisyklDE[j].PoslT);
 
 
+	    console.log("Gim :" +Gim);
+	    console.log("i :" +i);
+	    console.log("j :" +j);
+	    console.log("TaisyklDE[j].KKont2 :" +TaisyklDE[j].KKont2);
+	    console.log("TaisyklDE[j].KKont1 :" +TaisyklDE[j].KKont1);
+	    console.log("TaisyklDE[j].ES :" +TaisyklDE[j].ES);
+	    console.log("TaisyklDE[j].DKont1 :" +TaisyklDE[j].DKont1);
+	    console.log("TaisyklDE[j].DKont2 :" +TaisyklDE[j].DKont2);
+	    console.log("TaisyklDE[j].DKont3 :" +TaisyklDE[j].DKont3);
+	    console.log("TaisyklDE[j].FonV :" +TaisyklDE[j].FonV);
+	    console.log("TaisyklDE[j].PoslR :" +TaisyklDE[j].PoslR);
+	    console.log("TaisyklDE[j].PoslT :" +TaisyklDE[j].PoslT);
+	    
 
             i += TaisyklDE[j].PoslR;
-            TrEil = TrEil.concat(TaisyklDE[j].FonV);
-            j = 0; 
-
+            output = output.concat(TaisyklDE[j].FonV);
+            j = 0;
+	    
+	   console.log("output :" +output);
 
 
         } else j++;
@@ -490,9 +512,8 @@ function transkrDE(eil1, Gim) {
         }
     }
 
-    TrEil = stressName(TrEil);
-    console.log("TrEil :" +TrEil);
-    return setLetterCaseType(letterCaseType, TrEil);
+    output = stressName(output);
+    return setLetterCaseType(letterCaseType, output);
 }
 
 function delithuanizeName(namePart) {
@@ -510,11 +531,6 @@ function stressName(TrEil){
     middleName = (delithuanizeName((TrEil.replace(firstSyll, "")).toUpperCase())).slice(0, -1);
     nameEnding = (TrEil.substring(TrEil.length - 1)).toUpperCase();
     TrEil = firstSyll + middleName + nameEnding;
-
-    console.log("firstSyll :" +firstSyll);
-    console.log("middleName :" +middleName);
-    console.log("nameEnding :" +nameEnding);
-
     for(i = 0; i < exceptionEndings.length; i++){
 	if(TrEil.includes(exceptionEndings[i][i+1])){
 		TrEil = TrEil.replace(exceptionEndings[i][i+1], exceptionEndings[i][i]);
@@ -531,7 +547,6 @@ function transformDE() {
     var names = textIn.split(" ");
 
     var input = document.getElementById("tekstasInput").value;
-    console.log("input=" + input);
     if (pavardesDE.has(textIn)) {
         textOut = pavardesDE.get(textIn);
     } else {
@@ -608,7 +623,7 @@ function loadFileAsText() {
 
         }
 	var endTime = performance.now();
-        outputContent = outputContent + "\n" + "________________________________________________________________________" + "\n" + "PASSED: " + passedNo + "\n" + "FAILED: " + failedNo + "\n" + "EXCEPTIONS: " + exceptionNo + "\n" + "PERCENTAGE PASSED: " + percentPassed + "%" + "\n" + "PROCESSING TIME: " + (endTime - startTime)/100 + "s";
+        outputContent = outputContent + "\n" + "________________________________________________________________________" + "\n" + "PASSED: " + passedNo + "\n" + "FAILED: " + failedNo + "\n" + "EXCEPTIONS: " + exceptionNo + "\n" + "PERCENTAGE PASSED: " + percentPassed + "%" + "\n" + "PROCESSING TIME: " + (endTime - startTime) + "ms";
         document.getElementById("inputList").value = outputContent;
     };
 
