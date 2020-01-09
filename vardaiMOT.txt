@@ -8,3 +8,7 @@ Saale,Zalė;
 Agatha,Agata;
 Blume,Bliūmė;
 Ewe,Evė;
+Zella,Cela;
+Oehme,Ėmė;
+Penne,Penė;
+

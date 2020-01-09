@@ -2,6 +2,7 @@ var TaisyklDE = [];
 var exceptionEndings = [
   ["ĖJUS", "EJUS"]
 ];
+const syllableRegex = /[^aäėūeioöuüy]*[aäėūeioöuüy]+(?:[^aäėūeioöuüy]*$|[^aäėūeioöuüy](?=[^aäėūeioöuüy]))?/gi;
 
 function addEntryDE(KKont2, KKont1, ES, DKont1, DKont2, DKont3, Gim, FonV, PoslR, PoslT) {
     TaisyklDE.push({
@@ -435,25 +436,9 @@ function setLetterCaseType(caseType, word) {
     else return word.toLowerCase();
 }
 
-function germanizeInput(word){
-word = word.replace(/UE/g,"Ü");
-word = word.replace(/AE/g,"Ä");
-word = word.replace(/OE/g,"Ö");
-return word;
+function syllabify(words) {
+    return words.match(syllableRegex);
 }
-
-//https://www.mii.lt/informatica/pdf/INFO183.pdf
-//Kkont2 - kairysis kontekstas, dvi raides i kaire.
-//Kkont1 - viena raide i kaire.
-//Es - einamoji raide
-//Dkont - 1 2 3 raides i deine
-//Gim - gimine vyrika, moterika ar betkuri
-//Fonv - raide, i kuria keisti
-//Poslr - per kiek raidiu pasislinkti
-//Poslt - per kiek taisykliu pasislinkti
-//http://www.namenforschung.net/dfd/woerterbuch/liste/
-//https://html-cleaner.com/js/
-
 
 function lithuanizeDE(inputLithName, Gim) {
     var output = "";
@@ -498,7 +483,7 @@ function lithuanizeDE(inputLithName, Gim) {
         }
     }
 
-    output = stressName(output);
+    output = stressName1(output);
     return setLetterCaseType(letterCaseType, output);
 }
 
@@ -511,20 +496,18 @@ function delithuanizeName(namePart) {
 }
 
 
-function stressName(TrEil){
-    var i = 0;
-    firstSyll = (syllableToStress(TrEil)).toUpperCase();
-    middleName = (delithuanizeName((TrEil.replace(firstSyll, "")).toUpperCase())).slice(0, -1);
-    nameEnding = (TrEil.substring(TrEil.length - 1)).toUpperCase();
-    TrEil = firstSyll + middleName + nameEnding;
-    for(i = 0; i < exceptionEndings.length; i++){
-	if(TrEil.includes(exceptionEndings[i][i+1])){
-		TrEil = TrEil.replace(exceptionEndings[i][i+1], exceptionEndings[i][i]);
-		break;
-	}
-    }
-    return TrEil;
+
+
+function stressName1(output){
+firstSyll = (syllabify(output)[0]).toUpperCase();
+lastSyll = (syllabify(output)[syllabify(output).length - 1]).toUpperCase();
+betweenFirstAndLast = (delithuanizeName((output.replace(firstSyll,"").replace(lastSyll,"")).toUpperCase()));
+console.log("pirmas skiemuo : "+firstSyll);
+console.log("vidurys : "+betweenFirstAndLast);
+console.log("paskutinis skiemuo : "+lastSyll);
+return firstSyll + betweenFirstAndLast + lastSyll;
 }
+
 
 function transformDE() {
     var textOut = "";
