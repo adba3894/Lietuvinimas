@@ -18,7 +18,7 @@ function addEntryDE(KKont2, KKont1, ES, DKont1, DKont2, DKont3, Gim, FonV, PoslR
     });
 }
 
-function transkribavimoTaisyklesDE() {
+function lietuvinimoTaisyklesDE() {
     addEntryDE("", "", 'E', "Y", "EAEIOUÖÜ", "", 3, "EJ", 2, 1); 
     addEntryDE("", "", 'L', "L", "U", "", 3, "LI", 2, 1); 
     addEntryDE("L", "L", '_', "", "", "", 1, "AS", 2, 1); 
@@ -394,6 +394,7 @@ function transkribavimoTaisyklesDE() {
     addEntryDE("", "", 'Y', "", "", "", 3, "I", 1, 1); 
     addEntryDE("", "", 'Z', "Z", "", "", 3, "C", 2, 1); 
     addEntryDE("", "", 'Z', "", "", "", 3, "C", 1, 1); 
+    addEntryDE("T", "H", '_', "", "", "", 2, "A", 1, 9);   
     addEntryDE("A", "S", '_', "", "", "", 1, "", 1, 8);
     addEntryDE("", "KWTFBNZHDSGVPMCX", '_', "", "", "", 1, "AS", 1, 7);
     addEntryDE("AE", "Y", '_', "", "", "", 1, "US", 1, 6); 
@@ -405,7 +406,7 @@ function transkribavimoTaisyklesDE() {
 }
 
 window.onload = function(e) {
-    transkribavimoTaisyklesDE();
+    lietuvinimoTaisyklesDE();
     console.log("TaisyklDE.length=" + TaisyklDE.length);
     document.getElementById("tekstasInput")
         .addEventListener("keyup", function(event) {
@@ -452,57 +453,40 @@ return word;
 //https://html-cleaner.com/js/
 
 
-function transkrDE(eil1, Gim) {
+function lithuanizeDE(inputLithName, Gim) {
     var output = "";
     var i = 0,
         j = 0,
         ilg = 0;
-    var eil = "";
+    var lithNameCharArr = "";
     var letterCaseType = 0; 
-    var transcribedName = "";
-    letterCaseType = getLetterCaseType(eil1);
-    eil = "__" + eil1.toUpperCase(); 
-    ilg = eil.length;
-    eil = eil + "____0";
+    var lithuanizedName = "";
+    letterCaseType = getLetterCaseType(inputLithName);
+    lithNameCharArr = "__" + inputLithName.toUpperCase(); 
+    ilg = lithNameCharArr.length;
+    lithNameCharArr = lithNameCharArr + "____0";
     i = 2;
     j = 0;
-//    eil = germanizeInput();
+
     while (i < ilg + 1) 
     {
-        if (TaisyklDE[j].ES != eil[i]){
+        if (TaisyklDE[j].ES != lithNameCharArr[i]){
             j += TaisyklDE[j].PoslT; 
 }
         else if (
-            ((TaisyklDE[j].KKont2 != "") ? (TaisyklDE[j].KKont2).indexOf(eil[i - 2]) + 1 : 1) 
-            &&
-            ((TaisyklDE[j].KKont1 != "") ? (TaisyklDE[j].KKont1).indexOf(eil[i - 1]) + 1 : 1) &&
-            ((TaisyklDE[j].DKont1 != "") ? (TaisyklDE[j].DKont1).indexOf(eil[i + 1]) + 1 : 1) &&
-            ((TaisyklDE[j].DKont2 != "") ? (TaisyklDE[j].DKont2).indexOf(eil[i + 2]) + 1 : 1) &&
-            ((TaisyklDE[j].DKont3 != "") ? (TaisyklDE[j].DKont3).indexOf(eil[i + 3]) + 1 : 1) &&
+            ((TaisyklDE[j].KKont2 != "") ? (TaisyklDE[j].KKont2).indexOf(lithNameCharArr[i - 2]) + 1 : 1) &&
+            ((TaisyklDE[j].KKont1 != "") ? (TaisyklDE[j].KKont1).indexOf(lithNameCharArr[i - 1]) + 1 : 1) &&
+            ((TaisyklDE[j].DKont1 != "") ? (TaisyklDE[j].DKont1).indexOf(lithNameCharArr[i + 1]) + 1 : 1) &&
+            ((TaisyklDE[j].DKont2 != "") ? (TaisyklDE[j].DKont2).indexOf(lithNameCharArr[i + 2]) + 1 : 1) &&
+            ((TaisyklDE[j].DKont3 != "") ? (TaisyklDE[j].DKont3).indexOf(lithNameCharArr[i + 3]) + 1 : 1) &&
             (TaisyklDE[j].Gim & Gim)) {
 
             console.log("Kkont2=" + TaisyklDE[j].KKont2 + " Kkont1=" + TaisyklDE[j].KKont1 + " Es=" + TaisyklDE[j].ES + " Dkont1=" + TaisyklDE[j].DKont1 + " Dkont2=" + TaisyklDE[j].DKont2 + " Dkont3=" + TaisyklDE[j].DKont3 + " Gim=" + TaisyklDE[j].Gim + " Fonv=" + TaisyklDE[j].FonV + " Poslr=" + TaisyklDE[j].PoslR + " Poslt=" + TaisyklDE[j].PoslT);
-
-
-	    console.log("Gim :" +Gim);
-	    console.log("i :" +i);
-	    console.log("j :" +j);
-	    console.log("TaisyklDE[j].KKont2 :" +TaisyklDE[j].KKont2);
-	    console.log("TaisyklDE[j].KKont1 :" +TaisyklDE[j].KKont1);
-	    console.log("TaisyklDE[j].ES :" +TaisyklDE[j].ES);
-	    console.log("TaisyklDE[j].DKont1 :" +TaisyklDE[j].DKont1);
-	    console.log("TaisyklDE[j].DKont2 :" +TaisyklDE[j].DKont2);
-	    console.log("TaisyklDE[j].DKont3 :" +TaisyklDE[j].DKont3);
-	    console.log("TaisyklDE[j].FonV :" +TaisyklDE[j].FonV);
-	    console.log("TaisyklDE[j].PoslR :" +TaisyklDE[j].PoslR);
-	    console.log("TaisyklDE[j].PoslT :" +TaisyklDE[j].PoslT);
 	    
 
             i += TaisyklDE[j].PoslR;
             output = output.concat(TaisyklDE[j].FonV);
             j = 0;
-	    
-	   console.log("output :" +output);
 
 
         } else j++;
@@ -572,7 +556,7 @@ return textIn;
 
 function transcribeSeparateNames(names, sex, textOut) {
     for (i = 0; i < names.length; i++) {
-        textOut = textOut + " " + transkrDE(names[i], sex);
+        textOut = textOut + " " + lithuanizeDE(names[i], sex);
     }
     return textOut;
 }
@@ -599,7 +583,7 @@ function loadFileAsText() {
         for (i = 0; i < arr.length - 1; i++) {
             var foreignName = arr[i].substr(0, arr[i].indexOf(',')).trim();
             var lithName = (arr[i].split(',').pop().split(';')[0]).trim();
-            var lithuanizedName = (transkrDE(foreignName, document.getElementById("gimine").value)).trim();
+            var lithuanizedName = (lithuanizeDE(foreignName, document.getElementById("gimine").value)).trim();
             var percentPasssed = 0;
 
 
