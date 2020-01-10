@@ -24,7 +24,7 @@ Cremer,Krėmeris;
 Marc,Markas;
 Beckmann,Bekmanas;
 Klopstock,Klopštokas;
-Bruch,Brūchas;
+Bruch,Bruchas;
 Dachau,Dachau;
 Chemnitz,Chemnicas;
 Fuchs,Fuchsas;

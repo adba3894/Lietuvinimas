@@ -11,4 +11,10 @@ Ewe,Evė;
 Zella,Cela;
 Oehme,Ėmė;
 Penne,Penė;
-
+Ochsensaale,Ochsenzalė;
+Knihke,Knykė;
+Halle,Halė;
+Luckenwalde,Liukenvaldė;
+Ueckermünde,Ikermiundė;
+Kühne,Kiūnė;
+Zschokke,Čokė;

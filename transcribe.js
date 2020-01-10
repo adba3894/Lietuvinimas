@@ -60,8 +60,25 @@ function lietuvinimoTaisyklesDE() {
     addEntryDE("", "", 'O', "H", "", "", 3, "Ė", 2, 1); 
     addEntryDE("", "", 'Ö', "H", "", "", 3, "Ė", 2, 1); 
     addEntryDE("", "", 'P', "F", "", "", 3, "PF", 2, 1); 
-    addEntryDE("", "", 'P', "H", "", "", 3, "F", 2, 1); 
+    addEntryDE("", "", 'P', "H", "", "", 3, "F", 2, 1);
+
     addEntryDE("", "", 'Q', "U", "", "", 3, "KV", 2, 1); 
+    addEntryDE("Q", "U", 'E', "B", "B", "", 3, "E", 2, 1);     
+    addEntryDE("Q", "U", 'E', "C", "K", "", 3, "E", 2, 1);     
+    addEntryDE("Q", "U", 'E', "D", "D", "", 3, "E", 2, 1);     
+    addEntryDE("Q", "U", 'E', "F", "F", "", 3, "E", 2, 1);     
+    addEntryDE("Q", "U", 'E', "L", "L", "", 3, "E", 2, 1);     
+    addEntryDE("Q", "U", 'E', "M", "M", "", 3, "E", 2, 1);     
+    addEntryDE("Q", "U", 'E', "N", "N", "", 3, "E", 2, 1);     
+    addEntryDE("Q", "U", 'E', "P", "P", "", 3, "E", 2, 1);     
+    addEntryDE("Q", "U", 'E', "R", "R", "", 3, "E", 2, 1);     
+    addEntryDE("Q", "U", 'E', "S", "S", "", 3, "E", 2, 1);     
+    addEntryDE("Q", "U", 'E', "T", "T", "", 3, "E", 2, 1);     
+    addEntryDE("Q", "U", 'E', "T", "Z", "", 3, "E", 2, 1);     
+    addEntryDE("Q", "U", 'E', "P", "F", "", 3, "E", 2, 1);     
+    addEntryDE("Q", "U", 'E', "X", "", "", 3, "E", 2, 1);
+    addEntryDE("Q", "U", 'E', "", "", "", 3, "Ė", 1, 1); 
+
     addEntryDE("", "", 'R', "H", "", "", 3, "R", 2, 1); 
     addEntryDE("T", "H", '_', "", "", "", 1, "AS", 2, 1);
     addEntryDE("", "", 'T', "T", "H", "", 3, "T", 3, 1); 
@@ -210,8 +227,8 @@ function lietuvinimoTaisyklesDE() {
     addEntryDE("", "T", 'H', "", "", "", 3, "T", 1, 1); 
     addEntryDE("", "", 'H', "", "", "", 3, "H", 1, 1);  
     addEntryDE("", "", 'I', "I", "", "", 3, "Y", 2, 3); 
-    addEntryDE("", "BCDFGHJKLMNPRTVZ", 'I', "BCDFGHJKLMNPRTVZ", "", "", 3, "Y", 1, 2); 
-    addEntryDE("", "", 'I', "BCDFGHJKLMNPRTVZ", "", "", 3, "Y", 1, 1); 
+    addEntryDE("", "BCDFGJKLMNPRTVZ", 'I', "BCDFGHJKLMNPRTVZ", "", "", 3, "Y", 1, 2); 
+    addEntryDE("", "", 'I', "BCDFGHJKMNPRTVZ", "", "", 3, "Y", 1, 1); 
     addEntryDE("", "", 'I', "", "", "", 3, "I", 1, 1); 
     addEntryDE("", "", 'J', "", "", "", 3, "J", 1, 1); 
     addEntryDE("", "", 'K', "K", "", "", 3, "K", 2, 1); 
@@ -389,6 +406,7 @@ function lietuvinimoTaisyklesDE() {
     addEntryDE("", "", 'X', "", "", "", 3, "KS", 1, 1); 
     addEntryDE("", "", 'Y', "H", "LMNRAEIOUÄÖÜ", "", 3, "Y", 2, 5); 
     addEntryDE("", "", 'Y', "Y", "", "", 3, "Y", 2, 4); 
+    addEntryDE("", "", 'Y', "", "P", "H", 3, "I", 1, 3); 
     addEntryDE("", "BCDFGHJKMNPRTVZ", 'Y', "BCDLFGHJKMPNRTVZ", "", "", 3, "Y", 1, 3); 
     addEntryDE("", "EAEIOUÖÜ", 'Y', "EAEIOUÖÜ", "", "", 3, "J", 2, 2); 
     addEntryDE("", "", 'Y', "_", "", "", 3, "J", 1, 1); 
