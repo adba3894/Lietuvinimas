@@ -44,6 +44,7 @@ function lietuvinimoTaisyklesDE() {
     addEntryDE("", "", 'C', "H", "H", "", 3, "CH", 3, 1); 
     addEntryDE("", "", 'C', "H", "S", "", 3, "CHS", 3, 1); 
     addEntryDE("", "", 'D', "T", "", "", 3, "T", 2, 1); 
+    addEntryDE("", "", 'E', "H", "AEIOUÖÜ", "", 3, "EH", 2, 1); 
     addEntryDE("", "", 'E', "H", "", "", 3, "Ė", 2, 1); 
     addEntryDE("", "", 'E', "", "E", "_", 3, "Ė", 1, 1); 
     addEntryDE("", "", 'G', "G", "", "", 3, "G", 2, 1); 
